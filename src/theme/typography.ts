@@ -1,12 +1,12 @@
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 
 export const fontFamily = {
-  nunitoSans: ['Nunito Sans', 'sans-serif'].join(','),
-  croissantOne: ['Croissant One', 'serif'].join(','),
+  poppins: ["Poppins", 'sans-serif'].join(','),
+  DMSans: ["DM Sans", 'sans-serif'].join(','),
 };
 
 const typography: TypographyOptions = {
-  fontFamily: fontFamily.nunitoSans,
+  fontFamily: fontFamily.DMSans,
   h1: {
     fontSize: '3rem',
     fontWeight: 700,
