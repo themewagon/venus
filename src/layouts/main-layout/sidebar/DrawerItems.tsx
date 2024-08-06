@@ -1,11 +1,15 @@
+import { fontFamily } from 'theme/typography';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
+import List from '@mui/material/List';
 import Stack from '@mui/material/Stack';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import LogoImg from 'assets/images/logo.png';
 import Image from 'components/base/Image';
-import { fontFamily } from 'theme/typography';
+import sitemap from 'routes/sitemap';
+import ListItem from './list-items/ListItem';
+import CollapseListItem from './list-items/CollapseListItem';
 
 const DrawerItems = () => {
   return (
@@ -50,7 +54,15 @@ const DrawerItems = () => {
         </ButtonBase>
       </Stack>
 
-      
+      <List component="nav" sx={{ mt: 4, mb: 15, px: 0 }}>
+        {sitemap.map((route) =>
+          route.items ? (
+            <CollapseListItem key={route.id} {...route} />
+          ) : (
+            <ListItem key={route.id} {...route} />
+          ),
+        )}
+      </List>
     </>
   );
 };

@@ -20,12 +20,48 @@ export interface MenuItem {
 
 const sitemap: MenuItem[] = [
   {
-    id: 'featured',
-    subheader: 'Featured',
+    id: 'dashboard',
+    subheader: 'Dashboard',
     path: '/',
-    active: true
+    icon: 'ri:dashboard-fill',
+    active: true,
   },
-  
+  {
+    id: 'activity',
+    subheader: 'Activity',
+    path: '#!',
+    icon: 'ic:baseline-show-chart',
+  },
+  {
+    id: 'library',
+    subheader: 'Library',
+    path: '#!',
+    icon: 'material-symbols:local-library-outline',
+  },
+  {
+    id: 'security',
+    subheader: 'Security',
+    path: '#!',
+    icon: 'ic:round-security',
+  },
+  {
+    id: 'schedules',
+    subheader: 'Schedules',
+    path: '#!',
+    icon: 'ic:outline-calendar-today',
+  },
+  {
+    id: 'payouts',
+    subheader: 'Payouts',
+    path: '#!',
+    icon: 'material-symbols:account-balance-wallet-outline',
+  },
+  {
+    id: 'settings',
+    subheader: 'Settings',
+    path: '#!',
+    icon: 'ic:outline-settings',
+  },
 ];
 
 export default sitemap;
