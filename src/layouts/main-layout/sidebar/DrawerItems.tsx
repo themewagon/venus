@@ -3,13 +3,15 @@ import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import LogoImg from 'assets/images/logo.png';
-import Image from 'components/base/Image';
-import sitemap from 'routes/sitemap';
 import ListItem from './list-items/ListItem';
 import CollapseListItem from './list-items/CollapseListItem';
+import IconifyIcon from 'components/base/IconifyIcon';
+import Image from 'components/base/Image';
+import sitemap from 'routes/sitemap';
 
 const DrawerItems = () => {
   return (
@@ -20,7 +22,7 @@ const DrawerItems = () => {
         px={4.5}
         position="sticky"
         top={0}
-        bgcolor="info.darker"
+        bgcolor="info.light"
         alignItems="center"
         justifyContent="flex-start"
         borderBottom={1}
@@ -54,7 +56,7 @@ const DrawerItems = () => {
         </ButtonBase>
       </Stack>
 
-      <List component="nav" sx={{ mt: 4, mb: 15, px: 0 }}>
+      <List component="nav" sx={{ mt: 2.5, mb: 10, px: 4.5 }}>
         {sitemap.map((route) =>
           route.items ? (
             <CollapseListItem key={route.id} {...route} />
@@ -63,6 +65,15 @@ const DrawerItems = () => {
           ),
         )}
       </List>
+
+      <Box mt="auto" px={4.5} pb={6}>
+        <Button
+          variant="text"
+          startIcon={<IconifyIcon icon="ic:baseline-logout" />}
+        >
+          Log Out
+        </Button>
+      </Box>
     </>
   );
 };

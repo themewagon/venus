@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { MenuItem } from 'routes/sitemap';
 import Link from '@mui/material/Link';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -7,18 +6,17 @@ import ListItemText from '@mui/material/ListItemText';
 import IconifyIcon from 'components/base/IconifyIcon';
 
 const ListItem = ({ subheader, icon, path, active }: MenuItem) => {
-  const [open, setOpen] = useState(false);
-
-  const handleClick = () => {
-    setOpen(!open);
-  };
-
   return (
     <ListItemButton
       component={Link}
       href={path}
-      onClick={handleClick}
-      sx={{ mb: 2.5, bgcolor: active ? 'info.main' : null }}
+      sx={{
+        mb: 2.5,
+        bgcolor: active ? 'primary.main' : null,
+        '&:hover': {
+          bgcolor: active ? 'primary.main' : null,
+        },
+      }}
     >
       <ListItemIcon>
         {icon && (
@@ -26,7 +24,7 @@ const ListItem = ({ subheader, icon, path, active }: MenuItem) => {
             icon={icon}
             fontSize="h4.fontSize"
             sx={{
-              color: active ? 'text.primary' : null,
+              color: active ? 'info.light' : null,
             }}
           />
         )}
@@ -35,7 +33,7 @@ const ListItem = ({ subheader, icon, path, active }: MenuItem) => {
         primary={subheader}
         sx={{
           '& .MuiListItemText-primary': {
-            color: active ? 'text.primary' : null,
+            color: active ? 'info.light' : null,
           },
         }}
       />
