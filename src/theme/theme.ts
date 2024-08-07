@@ -7,13 +7,16 @@ import Drawer from './components/navigation/Drawer';
 import Paper from './components/surfaces/Paper';
 import CssBaseline from './components/utils/CssBaseline';
 import List from './components/list/List';
+import Button from './components/buttons/Button';
+import ButtonBase from './components/buttons/ButtonBase';
 import ListItemButton from './components/list/ListItemButton';
 import ListItemIcon from './components/list/ListItemIcon';
 import ListItemText from './components/list/ListItemText';
 import Collapse from './components/list/Collapse';
 import MenuItem from './components/list/MenuItem';
-import Button from './components/buttons/Button';
 import Link from './components/navigation/Link';
+import IconButton from './components/buttons/IconButton';
+import Toolbar from './components/buttons/Toolbar';
 
 export const theme = createTheme({
   typography,
@@ -25,6 +28,9 @@ export const theme = createTheme({
     MuiLink: Link,
     MuiPaper: Paper,
     MuiButton: Button,
+    MuiButtonBase: ButtonBase,
+    MuiIconButton: IconButton,
+    MuiToolbar: Toolbar,
     MuiList: List,
     MuiCollapse: Collapse,
     MuiMenuItem: MenuItem,
