@@ -13,6 +13,7 @@ import ListItemText from './components/list/ListItemText';
 import Collapse from './components/list/Collapse';
 import MenuItem from './components/list/MenuItem';
 import Button from './components/buttons/Button';
+import Link from './components/navigation/Link';
 
 export const theme = createTheme({
   typography,
@@ -21,6 +22,7 @@ export const theme = createTheme({
   components: {
     MuiStack: Stack,
     MuiDrawer: Drawer,
+    MuiLink: Link,
     MuiPaper: Paper,
     MuiButton: Button,
     MuiList: List,
