@@ -8,15 +8,14 @@ const InputBase: Components<Omit<Theme, 'components'>>['MuiInputBase'] = {
       borderStyle: 'solid',
       borderColor: theme.palette.info.main,
       borderRadius: theme.shape.borderRadius,
-      backgroundColor: `${theme.palette.info.lighter} !important`,
+      backgroundColor: `${theme.palette.info.light} !important`,
       fontSize: theme.typography.subtitle2.fontSize,
       color: theme.palette.text.secondary,
-      padding: theme.spacing(1.25, 2.5),
+      padding: theme.spacing(1.25, 2),
       letterSpacing: 0.5,
 
       '&:focus-within': {
         borderColor: theme.palette.primary.main,
-        boxShadow: theme.customShadows[1],
       },
 
       '&:before, &:after': {

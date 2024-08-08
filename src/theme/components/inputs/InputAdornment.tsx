@@ -5,8 +5,8 @@ const InputAdornment: Components<Omit<Theme, 'components'>>['MuiInputAdornment']
   styleOverrides: {
     root: ({ theme }) => ({
       margin: '0 !important',
-      color: theme.palette.neutral.light,
-      fontSize: theme.typography.h4.fontSize,
+      color: theme.palette.text.primary,
+      fontSize: theme.typography.h5.fontSize,
 
       '&.MuiInputAdornment-sizeSmall': {
         '& .MuiBox-root': {

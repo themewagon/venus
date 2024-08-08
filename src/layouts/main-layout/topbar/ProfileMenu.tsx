@@ -65,6 +65,7 @@ const ProfileMenu = () => {
   return (
     <>
       <ButtonBase
+        sx={{ ml: 1 }}
         onClick={handleProfileClick}
         aria-controls={open ? 'account-menu' : undefined}
         aria-expanded={open ? 'true' : undefined}
@@ -74,8 +75,8 @@ const ProfileMenu = () => {
         <Avatar
           src={ProfileImage}
           sx={{
-            height: 48,
-            width: 48,
+            height: 44,
+            width: 44,
             bgcolor: 'primary.main',
           }}
         />
@@ -98,11 +99,11 @@ const ProfileMenu = () => {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <Box p={1}>
-          <MenuItem onClick={handleProfileMenuClose} sx={{ '&:hover': { bgcolor: 'info.light' } }}>
+          <MenuItem onClick={handleProfileMenuClose} sx={{ '&:hover': { bgcolor: 'info.dark' } }}>
             <Avatar src={ProfileImage} sx={{ mr: 1, height: 42, width: 42 }} />
             <Stack direction="column">
               <Typography variant="body2" color="text.primary" fontWeight={600}>
-                Alex Stanton
+                Alex Manda
               </Typography>
               <Typography variant="caption" color="text.secondary" fontWeight={400}>
                 alex@example.com

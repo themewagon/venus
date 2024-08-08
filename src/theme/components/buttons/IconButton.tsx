@@ -4,11 +4,8 @@ import { Components } from '@mui/material/styles/components';
 const IconButton: Components<Omit<Theme, 'components'>>['MuiIconButton'] = {
   styleOverrides: {
     root: ({ theme }) => ({
-      border: 1,
-      borderStyle: 'solid',
-      borderColor: theme.palette.info.main,
+      color: theme.palette.text.primary,
       backgroundColor: theme.palette.info.lighter,
-      color: theme.palette.text.disabled,
       marginLeft: 0,
     }),
     sizeLarge: ({ theme }) => ({

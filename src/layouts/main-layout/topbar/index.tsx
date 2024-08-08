@@ -1,6 +1,5 @@
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Badge from '@mui/material/Badge';
 import Toolbar from '@mui/material/Toolbar';
 import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -66,12 +65,12 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
 
         <TextField
           variant="filled"
-          placeholder="Search Task"
-          sx={{ width: 350, display: { xs: 'none', md: 'flex' } }}
+          placeholder="Search"
+          sx={{ width: 340, display: { xs: 'none', md: 'flex' } }}
           InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconifyIcon icon={'mynaui:search'} />
+            startAdornment: (
+              <InputAdornment position="start">
+                <IconifyIcon icon="eva:search-fill" />
               </InputAdornment>
             ),
           }}
@@ -81,9 +80,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
       <Stack spacing={{ xs: 1, sm: 2 }} alignItems="center">
         <LanguageSelect />
         <IconButton size="large">
-          <Badge color="error" variant="dot">
-            <IconifyIcon icon="solar:bell-outline" />
-          </Badge>
+          <IconifyIcon icon="f7:bell" />
         </IconButton>
         <ProfileMenu />
       </Stack>

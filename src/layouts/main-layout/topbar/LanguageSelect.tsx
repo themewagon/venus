@@ -90,7 +90,7 @@ const LanguageSelect = () => {
           return (
             <MenuItem
               key={langItem.id}
-              sx={{ bgcolor: langItem.id === language.id ? 'transparent.gray.main' : null }}
+              sx={{ bgcolor: langItem.id === language.id ? 'info.dark' : null }}
               onClick={() => handleLanguageItemClick(langItem)}
             >
               <ListItemIcon sx={{ mr: 2, fontSize: 'h3.fontSize' }}>
