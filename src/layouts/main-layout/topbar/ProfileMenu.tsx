@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import Menu from '@mui/material/Menu';
 import Box from '@mui/material/Box';
+import Menu from '@mui/material/Menu';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
 import MenuItem from '@mui/material/MenuItem';
-import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import ButtonBase from '@mui/material/ButtonBase';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import IconifyIcon from 'components/base/IconifyIcon';
 import ProfileImage from 'assets/images/avatars/avatar1.png';
@@ -21,32 +21,32 @@ const menuItems: MenuItems[] = [
   {
     id: 1,
     title: 'View Profile',
-    icon: 'hugeicons:user-circle-02',
+    icon: 'ic:outline-account-circle',
   },
   {
     id: 2,
     title: 'Account Settings',
-    icon: 'hugeicons:account-setting-02',
+    icon: 'ic:outline-manage-accounts',
   },
   {
     id: 3,
     title: 'Notifications',
-    icon: 'solar:bell-outline',
+    icon: 'ic:outline-notifications-none',
   },
   {
     id: 4,
     title: 'Switch Account',
-    icon: 'hugeicons:user-switch',
+    icon: 'ic:outline-switch-account',
   },
   {
     id: 5,
     title: 'Help Center',
-    icon: 'carbon:help',
+    icon: 'ic:outline-contact-support',
   },
   {
     id: 6,
     title: 'Logout',
-    icon: 'hugeicons:logout-03',
+    icon: 'ic:baseline-logout',
   },
 ];
 

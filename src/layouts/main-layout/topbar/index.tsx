@@ -26,13 +26,10 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
 
   return (
     <Stack
-      px={3.5}
-      height={90}
+      p={3.5}
       alignItems="center"
       justifyContent="space-between"
-      bgcolor="info.lighter"
-      position="sticky"
-      top={0}
+      bgcolor="transparent"
       zIndex={1200}
     >
       <Stack spacing={{ xs: 1, sm: 2 }} alignItems="center">
@@ -80,7 +77,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
       <Stack spacing={{ xs: 1, sm: 2 }} alignItems="center">
         <LanguageSelect />
         <IconButton size="large">
-          <IconifyIcon icon="f7:bell" />
+          <IconifyIcon icon="ic:outline-notifications-none" />
         </IconButton>
         <ProfileMenu />
       </Stack>
