@@ -6,7 +6,7 @@ import Splash from 'components/loader/Splash';
 import PageLoader from 'components/loader/PageLoader';
 
 const App = lazy(() => import('App'));
-const Home = lazy(() => import('pages/Home'));
+const Dashboard = lazy(() => import('pages/dashboard/Dashbaord'));
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Home />,
+            element: <Dashboard />,
           },
         ],
       },

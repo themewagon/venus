@@ -13,6 +13,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
       <Stack
         component="main"
         direction="column"
+        px={3}
         width={{ xs: 1, lg: `calc(100% - 290px)` }}
         flexGrow={1}
       >
