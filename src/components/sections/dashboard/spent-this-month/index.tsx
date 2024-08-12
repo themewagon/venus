@@ -1,5 +1,6 @@
 import { Paper, Stack, Box, Typography } from '@mui/material';
 import IconifyIcon from 'components/base/IconifyIcon';
+import SpentThisMonthChart from './SpentThisMonthChart';
 
 const SpentThisMonth = () => {
   return (
@@ -31,6 +32,8 @@ const SpentThisMonth = () => {
           </Typography>
         </Stack>
       </Stack>
+
+      <SpentThisMonthChart data={[130, 120, 130, 120, 150, 160, 140]} sx={{ height: '230px !important' }} />
     </Paper>
   );
 };
