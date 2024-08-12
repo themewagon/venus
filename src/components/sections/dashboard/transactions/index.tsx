@@ -1,4 +1,4 @@
-import { Paper, Typography, Stack, Box } from "@mui/material";
+import { Paper, Typography, Stack } from "@mui/material";
 import IconifyIcon from "components/base/IconifyIcon";
 
 const Transactions = () => {
