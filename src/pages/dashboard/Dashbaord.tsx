@@ -1,4 +1,5 @@
 import Grid from "@mui/material/Grid";
+import AvatarCard from "components/sections/dashboard/avatar-card";
 import TotalSpent from "components/sections/dashboard/total-spent";
 
 const Dashbaord = () => {
@@ -13,6 +14,7 @@ const Dashbaord = () => {
       </Grid>
 
       <Grid item xs={12} xl={4}>
+        <AvatarCard/>
       </Grid>
 
       <Grid item xs={12} xl={4}>

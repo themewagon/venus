@@ -4,7 +4,7 @@ import TotalSpentChart from './TotalSpentChart';
 
 const TotalSpent = () => {
   return (
-    <Paper>
+    <Paper sx={{height: 355}}>
       <Stack alignItems="flex-start" justifyContent="space-between">
         <Box>
           <Typography variant="caption" color="text.disabled" fontWeight={500}>
