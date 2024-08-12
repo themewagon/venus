@@ -2,6 +2,7 @@ import Grid from "@mui/material/Grid";
 import AvatarCard from "components/sections/dashboard/avatar-card";
 import SpentThisMonth from "components/sections/dashboard/spent-this-month";
 import TotalSpent from "components/sections/dashboard/total-spent";
+import Transactions from "components/sections/dashboard/transactions";
 
 const Dashbaord = () => {
   return (
@@ -22,7 +23,8 @@ const Dashbaord = () => {
         <SpentThisMonth/>
       </Grid>
 
-      <Grid item xs={12} xl={8}>
+      <Grid item xs={12} xl={4}>
+        <Transactions/>
       </Grid>
 
       <Grid item xs={12}>
