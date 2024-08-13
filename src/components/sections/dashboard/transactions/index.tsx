@@ -1,4 +1,7 @@
-import { Paper, Typography, Stack, Button } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 
 const transactions = [
@@ -33,7 +36,7 @@ const Transactions = () => {
       </Typography>
 
       {transactions.map((item) => (
-        <Stack mb={3} spacing={2} justifyContent="flex-start" alignItems="center">
+        <Stack key={item.id} mb={3} spacing={2} justifyContent="flex-start" alignItems="center">
           <Stack
             alignItems="center"
             justifyContent="center"
