@@ -1,4 +1,7 @@
-import { Paper, Stack, Box, Typography } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 import SpentThisMonthChart from './SpentThisMonthChart';
 
@@ -33,7 +36,10 @@ const SpentThisMonth = () => {
         </Stack>
       </Stack>
 
-      <SpentThisMonthChart data={[130, 120, 130, 120, 150, 160, 140]} sx={{ height: '230px !important' }} />
+      <SpentThisMonthChart
+        data={[110, 80, 150, 100, 130, 160, 60]}
+        sx={{ height: '230px !important' }}
+      />
     </Paper>
   );
 };
