@@ -48,7 +48,7 @@ const Tasks = () => {
         <Button
           variant="text"
           size="medium"
-          sx={{ color: 'primary.main', fontWeight: 700 }}
+          sx={{ mr: -1, color: 'primary.main', fontWeight: 700 }}
           endIcon={<IconifyIcon icon="gg:arrow-right" />}
         >
           View all Tasks
