@@ -7,14 +7,17 @@ import IconifyIcon from 'components/base/IconifyIcon';
 
 const tasks = [
   {
+    id: 1,
     task: 'Meet w/ Simmmple',
     schedule: '01:00 PM - 02:00 PM',
   },
   {
+    id: 2,
     task: 'Fitness Training',
     schedule: '02:00 PM - 03:00 PM',
   },
   {
+    id: 3,
     task: 'Reading time',
     schedule: '03:00 PM - 04:00 PM',
   },
@@ -29,7 +32,7 @@ const Tasks = () => {
 
       {tasks.map((item) => {
         return (
-          <Stack mb={2.5} spacing={1.5} alignItems="center">
+          <Stack key={item.id} mb={2.5} spacing={1.5} alignItems="center">
             <Box height={40} width={4} bgcolor="primary.main" borderRadius={2} />
 
             <Stack direction="column">
@@ -49,7 +52,7 @@ const Tasks = () => {
           variant="text"
           size="medium"
           sx={{ mr: -1, color: 'primary.main', fontWeight: 700 }}
-          endIcon={<IconifyIcon icon="gg:arrow-right" />}
+          endIcon={<IconifyIcon icon="ic:baseline-east" />}
         >
           View all Tasks
         </Button>
