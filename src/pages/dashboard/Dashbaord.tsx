@@ -4,12 +4,13 @@ import SpentThisMonth from "components/sections/dashboard/spent-this-month";
 import Tasks from "components/sections/dashboard/tasks";
 import TotalSpent from "components/sections/dashboard/total-spent";
 import Transactions from "components/sections/dashboard/transactions";
+import TopCards from "components/sections/dashboard/top-cards";
 
 const Dashbaord = () => {
   return (
     <Grid container spacing={{ xs: 2.5, sm: 3, lg: 3.75 }}>
       <Grid item xs={12}>
-        {/* <TopCards /> */}
+        <TopCards />
       </Grid>
 
       <Grid item xs={12} xl={8}>
