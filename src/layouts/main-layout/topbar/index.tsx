@@ -1,6 +1,7 @@
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Toolbar from '@mui/material/Toolbar';
+import Badge from '@mui/material/Badge';
 import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
 import IconButton from '@mui/material/IconButton';
@@ -78,7 +79,9 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
       <Stack spacing={{ xs: 1, sm: 2 }} alignItems="center">
         <LanguageSelect />
         <IconButton size="large">
-          <IconifyIcon icon="ic:outline-notifications-none" />
+          <Badge badgeContent={2} color="error">
+            <IconifyIcon icon="ic:outline-notifications-none" />
+          </Badge>
         </IconButton>
         <ProfileMenu />
       </Stack>

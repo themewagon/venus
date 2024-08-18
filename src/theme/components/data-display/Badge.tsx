@@ -5,8 +5,8 @@ const Badge: Components<Omit<Theme, 'components'>>['MuiBadge'] = {
   styleOverrides: {
     root: {},
     badge: {
-      top: 6,
-      right: 6,
+      top: 4,
+      right: 4,
     },
   },
 };
