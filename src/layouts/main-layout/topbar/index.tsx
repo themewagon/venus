@@ -1,16 +1,16 @@
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Toolbar from '@mui/material/Toolbar';
 import Badge from '@mui/material/Badge';
+import Toolbar from '@mui/material/Toolbar';
 import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
 import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import IconifyIcon from 'components/base/IconifyIcon';
-import Image from 'components/base/Image';
-import LogoImg from 'assets/images/logo.png';
 import LanguageSelect from './LanguageSelect';
 import ProfileMenu from './ProfileMenu';
+import Image from 'components/base/Image';
+import LogoImg from 'assets/images/logo.png';
 
 interface TopbarProps {
   isClosing: boolean;
@@ -27,8 +27,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
 
   return (
     <Stack
-      pt={3.5}
-      pb={1.5}
+      py={3.5}
       alignItems="center"
       justifyContent="space-between"
       bgcolor="transparent"

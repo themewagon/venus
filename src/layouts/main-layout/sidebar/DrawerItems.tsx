@@ -6,11 +6,11 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import LogoImg from 'assets/images/logo.png';
 import ListItem from './list-items/ListItem';
 import CollapseListItem from './list-items/CollapseListItem';
-import IconifyIcon from 'components/base/IconifyIcon';
 import Image from 'components/base/Image';
+import IconifyIcon from 'components/base/IconifyIcon';
+import LogoImg from 'assets/images/logo.png';
 import sitemap from 'routes/sitemap';
 
 const DrawerItems = () => {
@@ -67,10 +67,7 @@ const DrawerItems = () => {
       </List>
 
       <Box mt="auto" px={4.5} pb={6}>
-        <Button
-          variant="text"
-          startIcon={<IconifyIcon icon="ic:baseline-logout" />}
-        >
+        <Button variant="text" startIcon={<IconifyIcon icon="ic:baseline-logout" />}>
           Log Out
         </Button>
       </Box>
