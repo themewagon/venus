@@ -26,7 +26,7 @@ interface ClientChartProps {
   sx?: SxProps;
 }
 
-const EarningsChart = ({ data, ...rest }: ClientChartProps) => {
+const BalanceChart = ({ data, ...rest }: ClientChartProps) => {
   const theme = useTheme();
 
   const option = useMemo(
@@ -67,18 +67,14 @@ const EarningsChart = ({ data, ...rest }: ClientChartProps) => {
           smooth: true,
           showSymbol: false,
           lineStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+              { offset: 0, color: 'rgba(84, 112, 198, 0.1)' },
+              { offset: 1, color: 'rgba(84, 112, 198, 1)' },
+            ]),
             width: 3,
             type: 'solid',
             cap: 'round',
-            color: theme.palette.primary.main,
           },
-        //   lineStyle: {
-        //     color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
-        //       { offset: 0, color: 'rgba(84, 112, 198, 0.2)' }, // Start with lower opacity
-        //       { offset: 1, color: 'rgba(84, 112, 198, 1)' }, // End with full opacity
-        //     ]),
-        //     width: 2,
-        //   },
           areaStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               { offset: 0, color: 'rgba(84, 112, 198, 0.5)' },
@@ -94,4 +90,4 @@ const EarningsChart = ({ data, ...rest }: ClientChartProps) => {
   return <ReactEchart echarts={echarts} option={option} {...rest} />;
 };
 
-export default EarningsChart;
+export default BalanceChart;

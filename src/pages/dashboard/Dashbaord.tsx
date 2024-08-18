@@ -6,6 +6,7 @@ import TotalSpent from "components/sections/dashboard/total-spent";
 import Transactions from "components/sections/dashboard/transactions";
 import TopCards from "components/sections/dashboard/top-cards";
 import Earnings from "components/sections/dashboard/earnings";
+import Balance from "components/sections/dashboard/balance";
 
 const Dashbaord = () => {
   return (
@@ -20,6 +21,10 @@ const Dashbaord = () => {
 
       <Grid item xs={12} xl={4}>
         <AvatarCard/>
+      </Grid>
+
+      <Grid item xs={12} xl={8}>
+        <Balance/>
       </Grid>
 
       <Grid item xs={12} xl={4}>
