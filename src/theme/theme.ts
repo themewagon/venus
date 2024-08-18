@@ -25,6 +25,7 @@ import InputAdornment from './components/inputs/InputAdornment';
 import Checkbox from './components/inputs/Checkbox';
 import Select from './components/inputs/Select';
 import Badge from './components/data-display/Badge';
+import Chip from './components/data-display/Chip';
 
 export const theme = createTheme({
   typography,
@@ -40,6 +41,7 @@ export const theme = createTheme({
     MuiIconButton: IconButton,
     MuiToolbar: Toolbar,
     MuiBadge: Badge,
+    MuiChip: Chip,
     MuiList: List,
     MuiCollapse: Collapse,
     MuiMenuItem: MenuItem,

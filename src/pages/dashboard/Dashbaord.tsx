@@ -5,6 +5,7 @@ import Tasks from "components/sections/dashboard/tasks";
 import TotalSpent from "components/sections/dashboard/total-spent";
 import Transactions from "components/sections/dashboard/transactions";
 import TopCards from "components/sections/dashboard/top-cards";
+import Earnings from "components/sections/dashboard/earnings";
 
 const Dashbaord = () => {
   return (
@@ -31,6 +32,10 @@ const Dashbaord = () => {
 
       <Grid item xs={12} xl={4}>
         <Tasks/>
+      </Grid>
+
+      <Grid item xs={12} xl={4}>
+        <Earnings/>
       </Grid>
     </Grid>
   );
