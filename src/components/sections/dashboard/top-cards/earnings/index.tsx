@@ -1,9 +1,17 @@
-import { Paper, Box, Stack, Typography } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 
 const Earnings = () => {
   return (
-    <Paper component={Stack} alignItems="center" justifyContent="space-between">
+    <Paper
+      component={Stack}
+      alignItems="center"
+      justifyContent="space-between"
+      sx={{ px: 2, py: 3 }}
+    >
       <Stack alignItems="center" justifyContent="flex-start" spacing={2}>
         <Stack
           alignItems="center"
@@ -24,8 +32,6 @@ const Earnings = () => {
           </Typography>
         </Box>
       </Stack>
-
-      {/* <SpentChart data={[160, 100, 210, 270, 180]} sx={{ width: 90, height: '75px !important' }} /> */}
     </Paper>
   );
 };
