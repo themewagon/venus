@@ -22,10 +22,10 @@ const SpentChart = ({ data, ...rest }: SpentChartProps) => {
         axisPointer: null,
       },
       grid: {
-        top: '5%',
+        top: '12%',
         left: '5%',
         right: '5%',
-        bottom: '-10%',
+        bottom: '-12%',
         containLabel: true,
       },
       xAxis: [
@@ -65,7 +65,7 @@ const SpentChart = ({ data, ...rest }: SpentChartProps) => {
         {
           name: 'Spent',
           type: 'bar',
-          barWidth: '28%',
+          barWidth: '35%',
           showBackground: true,
           backgroundStyle: {
             color: theme.palette.info.dark,

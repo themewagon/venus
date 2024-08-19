@@ -10,7 +10,7 @@ import Balance from "components/sections/dashboard/balance";
 
 const Dashbaord = () => {
   return (
-    <Grid container spacing={{ xs: 2.5, sm: 3, lg: 3.75 }}>
+    <Grid container spacing={{ xs: 2.5, sm: 3, lg: 2.5 }}>
       <Grid item xs={12}>
         <TopCards />
       </Grid>
