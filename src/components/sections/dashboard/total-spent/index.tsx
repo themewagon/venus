@@ -1,10 +1,13 @@
-import { Paper, Box, Stack, Typography } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 import TotalSpentChart from './TotalSpentChart';
 
 const TotalSpent = () => {
   return (
-    <Paper sx={{height: 355}}>
+    <Paper sx={{ height: 355 }}>
       <Stack alignItems="flex-start" justifyContent="space-between">
         <Box>
           <Typography variant="caption" color="text.disabled" fontWeight={500}>
@@ -26,7 +29,10 @@ const TotalSpent = () => {
         </Stack>
       </Stack>
 
-      <TotalSpentChart data={[160, 320, 210, 270, 180, 350, 230, 290, 200, 330, 150, 220]} sx={{ height: '230px !important' }} />
+      <TotalSpentChart
+        data={[160, 320, 210, 270, 180, 350, 230, 290, 200, 330, 150, 220]}
+        sx={{ height: '230px !important' }}
+      />
     </Paper>
   );
 };

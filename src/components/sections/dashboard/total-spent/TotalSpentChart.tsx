@@ -31,6 +31,12 @@ const TotalSpentChart = ({ data, ...rest }: TotalSpentChartProps) => {
             color: theme.palette.primary.main,
             fontSize: theme.typography.caption.fontSize,
             backgroundColor: theme.palette.info.light,
+            padding: [4, 4, 0, 4],
+          },
+          lineStyle: {
+            type: 'dashed',
+            color: theme.palette.primary.main,
+            width: 1,
           },
         },
       },
@@ -88,7 +94,7 @@ const TotalSpentChart = ({ data, ...rest }: TotalSpentChartProps) => {
       ],
       series: [
         {
-          name: 'Direct',
+          name: 'Spent',
           type: 'bar',
           barWidth: '60%',
           data,
