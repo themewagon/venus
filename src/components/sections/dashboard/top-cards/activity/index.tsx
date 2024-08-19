@@ -1,4 +1,8 @@
-import { Paper, Box, Stack, Typography } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import ActivityChart from './ActivityChart';
 
 const Activity = () => {
   return (
@@ -7,6 +11,7 @@ const Activity = () => {
       alignItems="center"
       justifyContent="space-between"
       sx={(theme) => ({
+        px: 3, py: 2.5,
         background: `linear-gradient(135deg, ${theme.palette.gradients.primary.state} 0%, ${theme.palette.gradients.primary.main} 100%)`,
       })}
     >
@@ -19,7 +24,7 @@ const Activity = () => {
         </Typography>
       </Box>
 
-      {/* <SpentChart data={[160, 100, 210, 270, 180]} sx={{ width: 90, height: '75px !important' }} /> */}
+      <ActivityChart data={[15, 50, 30, 45, 50]} sx={{ width: 75, height: '68px !important' }} />
     </Paper>
   );
 };
