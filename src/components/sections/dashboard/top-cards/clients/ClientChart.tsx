@@ -21,7 +21,6 @@ echarts.use([
   CanvasRenderer,
 ]);
 
-
 interface ClientChartProps {
   data: number[];
   sx?: SxProps;
@@ -32,20 +31,50 @@ const ClientChart = ({ data, ...rest }: ClientChartProps) => {
 
   const option = useMemo(
     () => ({
+      grid: {
+        top: 10,
+        bottom: 10,
+        left: 5,
+        right: 5,
+        containerLabel: true,
+      },
       xAxis: {
         type: 'category',
         data: ['', '', '', '', ''],
+        axisTick: {
+          show: false,
+        },
+        axisLine: {
+          show: false,
+        },
+        boundaryGap: 0,
       },
       yAxis: {
         type: 'value',
         min: 10,
         minInterval: 1,
+        axisLabel: {
+          show: false,
+        },
+        splitLine: {
+          show: false,
+        },
       },
       series: [
         {
           data,
           type: 'line',
           smooth: true,
+          showSymbol: false,
+          lineStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+              { offset: 1, color: 'rgba(84, 112, 198, 0.2)' },
+              { offset: 0, color: 'rgba(84, 112, 198, 1)' },
+            ]),
+            width: 3,
+            type: 'solid',
+            cap: 'round',
+          },
         },
       ],
     }),

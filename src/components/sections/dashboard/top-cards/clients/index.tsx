@@ -1,11 +1,19 @@
-import { Paper, Stack } from '@mui/material';
-// import IconifyIcon from 'components/base/IconifyIcon';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import IconifyIcon from 'components/base/IconifyIcon';
 import ClientChart from './ClientChart';
 
 const Clients = () => {
   return (
-    <Paper component={Stack} alignItems="center" justifyContent="space-between">
-      {/* <Stack alignItems="center" justifyContent="flex-start" spacing={2}>
+    <Paper
+      component={Stack}
+      alignItems="center"
+      justifyContent="space-between"
+      sx={{ px: 2, py: 2.5 }}
+    >
+      <Stack alignItems="center" justifyContent="flex-start" spacing={2}>
         <Stack
           alignItems="center"
           justifyContent="center"
@@ -26,8 +34,9 @@ const Clients = () => {
             321
           </Typography>
         </Box>
-      </Stack> */}
-      <ClientChart data={[10, 20, 50, 45, 60]} sx={{ width: 1, height: '75px !important' }} />
+      </Stack>
+
+      <ClientChart data={[15, 12, 50, 45, 60]} sx={{ width: 75, height: '68px !important' }} />
     </Paper>
   );
 };
