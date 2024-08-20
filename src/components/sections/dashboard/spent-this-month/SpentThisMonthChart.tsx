@@ -8,7 +8,7 @@ import { CanvasRenderer } from 'echarts/renderers';
 
 echarts.use([BarChart, TooltipComponent, GridComponent, AxisPointerComponent, CanvasRenderer]);
 
-interface SpentThisMonthChartProps {
+interface SpentThisMonthChartProps { 
   data: number[];
   sx?: SxProps;
 }
@@ -20,6 +20,7 @@ const SpentThisMonthChart = ({ data, ...rest }: SpentThisMonthChartProps) => {
     () => ({
       tooltip: {
         axisPointer: null,
+        formatter: 'Spent: ${c}',
       },
       grid: {
         top: '22%',
