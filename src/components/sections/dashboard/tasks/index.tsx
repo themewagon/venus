@@ -51,7 +51,7 @@ const Tasks = () => {
         <Button
           variant="text"
           size="medium"
-          sx={{ mr: -1, color: 'primary.main', fontWeight: 700 }}
+          sx={{ mt: 0.65, mr: -1, color: 'primary.main', fontWeight: 700 }}
           endIcon={<IconifyIcon icon="ic:baseline-east" />}
         >
           View all Tasks
