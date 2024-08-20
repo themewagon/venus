@@ -26,11 +26,11 @@ const Chip: Components<Omit<Theme, 'components'>>['MuiChip'] = {
       backgroundColor: theme.palette.transparent.success.main,
     }),
     colorWarning: ({ theme }) => ({
-      color: theme.palette.warning.dark,
+      color: theme.palette.warning.main,
       backgroundColor: theme.palette.transparent.warning.main,
     }),
     colorError: ({ theme }) => ({
-      color: theme.palette.error.dark,
+      color: theme.palette.error.main,
       backgroundColor: theme.palette.transparent.error.main,
     }),
     iconSmall: {

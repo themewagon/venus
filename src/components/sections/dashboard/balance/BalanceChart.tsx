@@ -31,6 +31,10 @@ const BalanceChart = ({ data, ...rest }: ClientChartProps) => {
 
   const option = useMemo(
     () => ({
+      tooltip: {
+        trigger: 'axis',
+        formatter: '{b}: ${c}',
+      },
       grid: {
         top: 40,
         bottom: 70,
@@ -40,11 +44,30 @@ const BalanceChart = ({ data, ...rest }: ClientChartProps) => {
       },
       xAxis: {
         type: 'category',
-        data: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+        data: [
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+        ],
         axisTick: {
           show: false,
         },
         axisLine: {
+          show: false,
+        },
+        axisLabel: {
           show: false,
         },
         boundaryGap: 0,
@@ -66,6 +89,7 @@ const BalanceChart = ({ data, ...rest }: ClientChartProps) => {
           type: 'line',
           smooth: true,
           showSymbol: false,
+          symbol: 'none',
           lineStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
               { offset: 0, color: 'rgba(84, 112, 198, 0.1)' },
