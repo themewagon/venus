@@ -38,9 +38,9 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
           component={Link}
           href="/"
           disableRipple
-          sx={{ lineHeight: 0, display: { xs: 'none', sm: 'block', lg: 'none' } }}
+          sx={{ mr: 0.5, lineHeight: 0, display: { xs: 'none', sm: 'block', lg: 'none' } }}
         >
-          <Image src={LogoImg} alt="logo" height={54} width={54} />
+          <Image src={LogoImg} alt="logo" height={40} width={40} />
         </ButtonBase>
 
         <Toolbar sx={{ display: { xm: 'block', lg: 'none' } }}>
@@ -51,20 +51,20 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
             aria-label="menu"
             onClick={handleDrawerToggle}
           >
-            <IconifyIcon icon="clarity:menu-line" />
+            <IconifyIcon icon="ic:baseline-menu" />
           </IconButton>
         </Toolbar>
 
-        <Toolbar sx={{ display: { xm: 'block', md: 'none' } }}>
+        <Toolbar sx={{ ml: -0.5, display: { xm: 'block', md: 'none' } }}>
           <IconButton size="large" edge="start" color="inherit" aria-label="search">
-            <IconifyIcon icon="mynaui:search" />
+            <IconifyIcon icon="eva:search-fill" />
           </IconButton>
         </Toolbar>
 
         <TextField
           variant="filled"
           placeholder="Search"
-          sx={{ width: 340, display: { xs: 'none', md: 'flex' } }}
+          sx={{ ml: 0.5, width: 340, display: { xs: 'none', md: 'flex' } }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
