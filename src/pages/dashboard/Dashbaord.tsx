@@ -1,47 +1,47 @@
 import Grid from "@mui/material/Grid";
 import TopCards from "components/sections/dashboard/top-cards";
-// import AvatarCard from "components/sections/dashboard/avatar-card";
-// import SpentThisMonth from "components/sections/dashboard/spent-this-month";
-// import Tasks from "components/sections/dashboard/tasks";
-// import TotalSpent from "components/sections/dashboard/total-spent";
-// import Transactions from "components/sections/dashboard/transactions";
-// import Earnings from "components/sections/dashboard/earnings";
-// import Balance from "components/sections/dashboard/balance";
+import AvatarCard from "components/sections/dashboard/avatar-card";
+import SpentThisMonth from "components/sections/dashboard/spent-this-month";
+import Tasks from "components/sections/dashboard/tasks";
+import TotalSpent from "components/sections/dashboard/total-spent";
+import Transactions from "components/sections/dashboard/transactions";
+import Earnings from "components/sections/dashboard/earnings";
+import Balance from "components/sections/dashboard/balance";
 
 const Dashbaord = () => {
   return (
-    <Grid container spacing={{ xs: 2.5, sm: 3, lg: 2.5 }}>
+    <Grid container spacing={2.5}>
       <Grid item xs={12}>
         <TopCards />
       </Grid>
 
-      {/* <Grid item xs={12} xl={8}>
+      <Grid item xs={12} md={8}>
         <TotalSpent/>
       </Grid>
 
-      <Grid item xs={12} xl={4}>
+      <Grid item xs={12} md={4}>
         <AvatarCard/>
       </Grid>
 
-      <Grid item xs={12} xl={8}>
+      <Grid item xs={12} md={8}>
         <Balance/>
       </Grid>
 
-      <Grid item xs={12} xl={4}>
+      <Grid item xs={12} md={4}>
         <SpentThisMonth/>
       </Grid>
 
-      <Grid item xs={12} xl={4}>
+      <Grid item xs={12} md={4}>
         <Transactions/>
       </Grid>
 
-      <Grid item xs={12} xl={4}>
+      <Grid item xs={12} md={4}>
         <Tasks/>
       </Grid>
 
-      <Grid item xs={12} xl={4}>
+      <Grid item xs={12} md={4}>
         <Earnings/>
-      </Grid> */}
+      </Grid>
     </Grid>
   );
 };
