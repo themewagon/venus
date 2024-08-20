@@ -38,7 +38,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
           component={Link}
           href="/"
           disableRipple
-          sx={{ mr: 0.5, lineHeight: 0, display: { xs: 'none', sm: 'block', lg: 'none' } }}
+          sx={{ mr: 0.75, lineHeight: 0, display: { xs: 'none', sm: 'block', lg: 'none' } }}
         >
           <Image src={LogoImg} alt="logo" height={40} width={40} />
         </ButtonBase>
@@ -64,7 +64,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
         <TextField
           variant="filled"
           placeholder="Search"
-          sx={{ ml: 0.5, width: 340, display: { xs: 'none', md: 'flex' } }}
+          sx={{ width: 340, display: { xs: 'none', md: 'flex' } }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
