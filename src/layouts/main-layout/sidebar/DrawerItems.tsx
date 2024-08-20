@@ -66,7 +66,7 @@ const DrawerItems = () => {
         )}
       </List>
 
-      <Box mt="auto" px={4.5} pb={6}>
+      <Box mt="auto" px={3} pb={6}>
         <Button variant="text" startIcon={<IconifyIcon icon="ic:baseline-logout" />}>
           Log Out
         </Button>
