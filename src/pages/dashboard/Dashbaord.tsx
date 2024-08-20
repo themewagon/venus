@@ -1,12 +1,12 @@
 import Grid from "@mui/material/Grid";
-import AvatarCard from "components/sections/dashboard/avatar-card";
-import SpentThisMonth from "components/sections/dashboard/spent-this-month";
-import Tasks from "components/sections/dashboard/tasks";
-import TotalSpent from "components/sections/dashboard/total-spent";
-import Transactions from "components/sections/dashboard/transactions";
 import TopCards from "components/sections/dashboard/top-cards";
-import Earnings from "components/sections/dashboard/earnings";
-import Balance from "components/sections/dashboard/balance";
+// import AvatarCard from "components/sections/dashboard/avatar-card";
+// import SpentThisMonth from "components/sections/dashboard/spent-this-month";
+// import Tasks from "components/sections/dashboard/tasks";
+// import TotalSpent from "components/sections/dashboard/total-spent";
+// import Transactions from "components/sections/dashboard/transactions";
+// import Earnings from "components/sections/dashboard/earnings";
+// import Balance from "components/sections/dashboard/balance";
 
 const Dashbaord = () => {
   return (
@@ -15,7 +15,7 @@ const Dashbaord = () => {
         <TopCards />
       </Grid>
 
-      <Grid item xs={12} xl={8}>
+      {/* <Grid item xs={12} xl={8}>
         <TotalSpent/>
       </Grid>
 
@@ -41,7 +41,7 @@ const Dashbaord = () => {
 
       <Grid item xs={12} xl={4}>
         <Earnings/>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };
