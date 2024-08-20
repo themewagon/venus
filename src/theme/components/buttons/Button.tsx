@@ -8,7 +8,7 @@ const Button: Components<Omit<Theme, 'components'>>['MuiButton'] = {
   styleOverrides: {
     root: ({ theme }) => ({
       color: theme.palette.text.disabled,
-      borderRadius: theme.shape.borderRadius * 1.25,
+      borderRadius: theme.shape.borderRadius * 10,
       textTransform: 'initial',
     }),
     text: ({ theme }) => ({
@@ -26,17 +26,17 @@ const Button: Components<Omit<Theme, 'components'>>['MuiButton'] = {
       '&:hover': { backgroundColor: theme.palette.info.lighter },
     }),
     sizeLarge: ({ theme }) => ({
-      padding: theme.spacing(1.25, 2.25),
+      padding: theme.spacing(1.125, 3),
       fontSize: theme.typography.h6.fontSize,
       fontWeight: 600,
     }),
     sizeMedium: ({ theme }) => ({
-      padding: theme.spacing(1.125, 1.5),
+      padding: theme.spacing(1, 2),
       fontSize: theme.typography.body1.fontSize,
       fontWeight: 600,
     }),
     sizeSmall: ({ theme }) => ({
-      padding: theme.spacing(1, 1.15),
+      padding: theme.spacing(0.875, 1.5),
       fontSize: theme.typography.caption.fontSize,
       fontWeight: 700,
     }),
