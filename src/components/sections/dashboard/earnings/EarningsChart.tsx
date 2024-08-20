@@ -31,6 +31,10 @@ const EarningsChart = ({ data, ...rest }: ClientChartProps) => {
 
   const option = useMemo(
     () => ({
+      tooltip: {
+        trigger: 'axis',
+        formatter: 'Spent: ${c}',
+      },
       grid: {
         top: 40,
         bottom: 70,
@@ -66,19 +70,13 @@ const EarningsChart = ({ data, ...rest }: ClientChartProps) => {
           type: 'line',
           smooth: true,
           showSymbol: false,
+          symbol: 'none',
           lineStyle: {
             width: 3,
             type: 'solid',
             cap: 'round',
             color: theme.palette.primary.main,
           },
-        //   lineStyle: {
-        //     color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
-        //       { offset: 0, color: 'rgba(84, 112, 198, 0.2)' }, // Start with lower opacity
-        //       { offset: 1, color: 'rgba(84, 112, 198, 1)' }, // End with full opacity
-        //     ]),
-        //     width: 2,
-        //   },
           areaStyle: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               { offset: 0, color: 'rgba(84, 112, 198, 0.5)' },
