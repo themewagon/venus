@@ -4,6 +4,7 @@ import {
   red,
   green,
   blue,
+  skyblue,
   purple,
   yellow,
   white,
@@ -55,6 +56,7 @@ const palette: PaletteOptions = {
     main: purple[500],
   },
   secondary: {
+    light: skyblue[500],
     main: blue[500],
   },
   info: {
