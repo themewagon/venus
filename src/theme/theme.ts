@@ -28,6 +28,7 @@ import Select from './components/inputs/Select';
 import Badge from './components/data-display/Badge';
 import Chip from './components/data-display/Chip';
 import DataGrid from './components/data-grid/DataGrid';
+import PaginationItem from './components/pagination/PaginationItem';
 
 export const theme = createTheme({
   typography,
@@ -58,6 +59,7 @@ export const theme = createTheme({
     MuiOutlinedInput: OutlinedInput,
     MuiInputAdornment: InputAdornment,
     MuiFormControlLabel: FormControlLabel,
+    MuiPaginationItem: PaginationItem,
     MuiCssBaseline: CssBaseline,
   },
 });
