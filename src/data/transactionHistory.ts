@@ -3,7 +3,7 @@ export const rows = [
     id: 1001,
     category: 'Groceries',
     date: '2024-08-20',
-    amount: '99$',
+    amount: '90$',
     paymentMethod: 'Credit Card',
     status: 'Completed',
     balance: '1201$',

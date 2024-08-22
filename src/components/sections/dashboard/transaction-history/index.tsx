@@ -1,5 +1,6 @@
 import { useState, ChangeEvent } from 'react';
 import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
@@ -15,8 +16,8 @@ const TransactionHistory = () => {
   };
 
   return (
-    <Paper sx={{ height: 385 }}>
-      <Stack alignItems="center" justifyContent="space-between">
+    <Paper sx={{ px: 0, height: 385 }}>
+      <Stack px={3.5} alignItems="center" justifyContent="space-between">
         <Typography variant="h4" minWidth={200}>
           Transaction History
         </Typography>
@@ -37,9 +38,9 @@ const TransactionHistory = () => {
         />
       </Stack>
 
-      <Stack sx={{ mt: 1.5, p: 0, pb: 0.75, minHeight: 411, width: 1 }}>
+      <Box mt={1.5}>
         <TransactionHistoryTable searchText={searchText} />
-      </Stack>
+      </Box>
     </Paper>
   );
 };

@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 import { DataGrid, GridColDef, useGridApiRef, GridApi } from '@mui/x-data-grid';
 import DataGridFooter from 'components/common/DataGridFooter';
 import { rows } from 'data/transactionHistory';
+import { Typography } from '@mui/material';
 
 const columns: GridColDef<(typeof rows)[number]>[] = [
   {
@@ -12,13 +13,20 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     editable: false,
     align: 'left',
     flex: 2,
-    minWidth: 220,
+    minWidth: 160,
+    renderHeader: () => (
+      <Typography variant='body2' fontWeight={600} ml={1}>Transaction Id</Typography>
+    ),
+    renderCell: (params) => (
+      <Stack ml={1} height={1} direction="column" alignSelf="center" justifyContent="center">
+        <Typography variant='body2' fontWeight={500}>{params.value}</Typography>
+      </Stack>
+    ),
   },
   {
     field: 'category',
     headerName: 'Category',
     editable: false,
-    sortable: false,
     align: 'left',
     flex: 2,
     minWidth: 140,
@@ -29,7 +37,7 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     editable: false,
     align: 'left',
     flex: 2,
-    minWidth: 200,
+    minWidth: 160,
   },
   {
     field: 'amount',
@@ -37,7 +45,7 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     editable: false,
     align: 'left',
     flex: 2,
-    minWidth: 200,
+    minWidth: 120,
   },
   {
     field: 'paymentMethod',
@@ -98,13 +106,13 @@ const TransactionHistoryTable = ({ searchText }: TaskOverviewTableProps) => {
       density="standard"
       columns={columns}
       rows={rows}
-      rowHeight={60}
+      rowHeight={52}
       disableColumnResize
       disableColumnMenu
       disableColumnSelector
       disableRowSelectionOnClick
       initialState={{
-        pagination: { paginationModel: { pageSize: 5 } },
+        pagination: { paginationModel: { pageSize: 4 } },
       }}
       autosizeOptions={{
         includeOutliers: true,
