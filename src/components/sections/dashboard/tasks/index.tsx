@@ -5,7 +5,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 
-const tasks = [
+interface TasksProps {
+  id: number | string;
+  task: string;
+  schedule: string;
+}
+
+const tasks: TasksProps[] = [
   {
     id: 1,
     task: 'Meet w/ Simmmple',
