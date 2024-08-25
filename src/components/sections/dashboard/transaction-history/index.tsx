@@ -38,7 +38,7 @@ const TransactionHistory = () => {
         />
       </Stack>
 
-      <Box mt={1.5}>
+      <Box mt={1.5} height={314}>
         <TransactionHistoryTable searchText={searchText} />
       </Box>
     </Paper>
