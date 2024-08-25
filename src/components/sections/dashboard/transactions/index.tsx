@@ -4,7 +4,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 
-const transactions = [
+interface TransactionProps {
+  id: number | string;
+  type: string;
+  date: string;
+  icon: string;
+  color: string;
+}
+
+const transactions: TransactionProps[] = [
   {
     id: 1,
     type: 'Public Transport',
