@@ -33,7 +33,7 @@ const EarningsChart = ({ data, ...rest }: ClientChartProps) => {
     () => ({
       tooltip: {
         trigger: 'axis',
-        formatter: 'Spent: ${c}',
+        formatter: 'Earnings: ${c}',
       },
       grid: {
         top: 40,
