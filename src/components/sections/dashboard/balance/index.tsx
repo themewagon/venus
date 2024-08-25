@@ -32,13 +32,17 @@ const Balance = () => {
   };
 
   return (
-    <Paper sx={{ height: 355 }}>
-      <Stack alignItems="center" justifyContent="space-between">
-        <Stack alignItems="center" spacing={1.5}>
+    <Paper sx={{ height: { xs: 500, sm: 355 } }}>
+      <Stack alignItems={{ xs: 'flex-start', sm: 'center' }} justifyContent="space-between">
+        <Stack
+          alignItems="center"
+          spacing={{ xs: 0.75, sm: 1.5 }}
+          direction={{ xs: 'column', sm: 'row' }}
+        >
           <Typography variant="h4" color="text.primary">
             Balance
           </Typography>
-          <Stack mt={0.55} alignItems="center" spacing={0.5}>
+          <Stack mt={{ xs: 0, sm: 0.55 }} alignItems="center" spacing={0.5}>
             <IconifyIcon icon="ic:round-check-circle" color="success.main" fontSize="h6.fontSize" />
             <Typography variant="body1" color="success.main" fontWeight={700}>
               On track
@@ -72,7 +76,14 @@ const Balance = () => {
         </FormControl>
       </Stack>
 
-      <Stack mt={3} width={1} spacing={3} justifyContent="center">
+      <Stack
+        mt={3}
+        width={1}
+        spacing={3}
+        justifyContent="center"
+        alignItems="center"
+        direction={{ xs: 'column', sm: 'row' }}
+      >
         {balance.map((item) => (
           <Box
             key={item.id}
