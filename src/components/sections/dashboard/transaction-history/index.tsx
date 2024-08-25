@@ -16,7 +16,7 @@ const TransactionHistory = () => {
   };
 
   return (
-    <Paper sx={{ px: 0, height: 385 }}>
+    <Paper sx={{ px: 0, height: 396 }}>
       <Stack px={3.5} alignItems="center" justifyContent="space-between">
         <Typography variant="h4" minWidth={200}>
           Transaction History
