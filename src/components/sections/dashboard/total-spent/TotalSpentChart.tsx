@@ -19,6 +19,7 @@ const TotalSpentChart = ({ data, ...rest }: TotalSpentChartProps) => {
     () => ({
       tooltip: {
         trigger: 'axis',
+        formatter: 'Spent: ${c}',
         axisPointer: {
           type: 'line',
           axis: 'y',
