@@ -1,5 +1,5 @@
 import Grid from "@mui/material/Grid";
-// import TopCards from "components/sections/dashboard/top-cards";
+import TopCards from "components/sections/dashboard/top-cards";
 // import AvatarCard from "components/sections/dashboard/avatar-card";
 // import SpentThisMonth from "components/sections/dashboard/spent-this-month";
 // import Tasks from "components/sections/dashboard/tasks";
@@ -13,9 +13,9 @@ import Grid from "@mui/material/Grid";
 const Dashbaord = () => {
   return (
     <Grid container spacing={2.5}>
-      {/* <Grid item xs={12}>
+      <Grid item xs={12}>
         <TopCards />
-      </Grid> */}
+      </Grid>
 
       {/* <Grid item xs={12} md={8}>
         <TotalSpent/>

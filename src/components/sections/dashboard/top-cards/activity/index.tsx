@@ -11,7 +11,8 @@ const Activity = () => {
       alignItems="center"
       justifyContent="space-between"
       sx={(theme) => ({
-        px: 3, py: 2.5,
+        px: 3,
+        py: 2.5,
         background: `linear-gradient(135deg, ${theme.palette.gradients.primary.state} 0%, ${theme.palette.gradients.primary.main} 100%)`,
       })}
     >

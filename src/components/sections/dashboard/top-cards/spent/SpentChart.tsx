@@ -19,7 +19,7 @@ const SpentChart = ({ data, ...rest }: SpentChartProps) => {
   const option = useMemo(
     () => ({
       tooltip: {
-        axisPointer: null,
+        show: false,
       },
       grid: {
         top: '12%',
