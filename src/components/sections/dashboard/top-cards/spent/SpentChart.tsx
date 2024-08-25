@@ -74,8 +74,10 @@ const SpentChart = ({ data, ...rest }: SpentChartProps) => {
           data,
           itemStyle: {
             color: theme.palette.primary.main,
-            barBorderRadius: [10, 10, 10, 10],
-            emphasis: {
+            borderRadius: [10, 10, 10, 10],
+          },
+          emphasis: {
+            itemStyle: {
               color: theme.palette.primary.main,
             },
           },
