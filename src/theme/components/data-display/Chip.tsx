@@ -18,8 +18,8 @@ const Chip: Components<Omit<Theme, 'components'>>['MuiChip'] = {
       fontSize: theme.typography.body2.fontSize,
     }),
     colorPrimary: ({ theme }) => ({
-      color: theme.palette.primary.main,
-      backgroundColor: theme.palette.primary.light,
+      color: theme.palette.text.primary,
+      backgroundColor: theme.palette.info.light,
     }),
     colorSuccess: ({ theme }) => ({
       color: theme.palette.success.main,

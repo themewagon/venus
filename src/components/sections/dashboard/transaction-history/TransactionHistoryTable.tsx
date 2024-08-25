@@ -5,6 +5,7 @@ import { DataGrid, GridColDef, useGridApiRef, GridApi } from '@mui/x-data-grid';
 import DataGridFooter from 'components/common/DataGridFooter';
 import { rows } from 'data/transactionHistory';
 import { Typography } from '@mui/material';
+import ActionMenu from './ActionMenu';
 
 const columns: GridColDef<(typeof rows)[number]>[] = [
   {
@@ -53,7 +54,7 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     editable: false,
     align: 'left',
     flex: 2,
-    minWidth: 200,
+    minWidth: 150,
   },
   {
     field: 'status',
@@ -64,12 +65,12 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     minWidth: 140,
     renderCell: (params) => {
       const color =
-        params.value === 'in progress'
-          ? 'primary'
-          : params.value === 'completed'
+        params.value === 'Pending'
+          ? 'warning'
+          : params.value === 'Completed'
             ? 'success'
-            : params.value === 'pending'
-              ? 'warning'
+            : params.value === 'Failed'
+              ? 'error'
               : 'info';
       return (
         <Stack direction="column" alignItems="center" justifyContent="center" height={1}>
@@ -86,6 +87,17 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     editable: false,
     flex: 1,
     minWidth: 100,
+  },
+  {
+    field: 'action',
+    headerAlign: 'right',
+    align: 'right',
+    editable: false,
+    sortable: false,
+    flex: 1,
+    minWidth: 100,
+    renderHeader: () => <ActionMenu />,
+    renderCell: () => <ActionMenu />,
   },
 ];
 
