@@ -21,6 +21,7 @@ const SpentThisMonthChart = ({ data, ...rest }: SpentThisMonthChartProps) => {
       tooltip: {
         axisPointer: null,
         formatter: 'Spent: ${c}',
+        borderWidth: 0,
       },
       grid: {
         top: '22%',
