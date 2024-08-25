@@ -33,12 +33,12 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
       bgcolor="transparent"
       zIndex={1200}
     >
-      <Stack spacing={{ xs: 1, sm: 2 }} alignItems="center">
+      <Stack spacing={{ xs: 2, sm: 3 }} alignItems="center">
         <ButtonBase
           component={Link}
           href="/"
           disableRipple
-          sx={{ mr: 0.75, lineHeight: 0, display: { xs: 'none', sm: 'block', lg: 'none' } }}
+          sx={{ lineHeight: 0, display: { xs: 'none', sm: 'block', lg: 'none' } }}
         >
           <Image src={LogoImg} alt="logo" height={40} width={40} />
         </ButtonBase>
@@ -55,7 +55,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
           </IconButton>
         </Toolbar>
 
-        <Toolbar sx={{ ml: -0.5, display: { xm: 'block', md: 'none' } }}>
+        <Toolbar sx={{ ml: -1.5, display: { xm: 'block', md: 'none' } }}>
           <IconButton size="large" edge="start" color="inherit" aria-label="search">
             <IconifyIcon icon="eva:search-fill" />
           </IconButton>
