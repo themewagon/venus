@@ -4,7 +4,16 @@ import BalanceBG from 'assets/images/balance-bg.png';
 import CreditBalanceChart from './CreditBalanceChart';
 import customShadows from 'theme/shadows';
 
-const creditBalanceData = [
+interface CreditBalanceProps {
+  id: number | string;
+  type: string;
+  time: string;
+  amount: string;
+  icon: string;
+  color: string;
+}
+
+const creditBalanceData: CreditBalanceProps[] = [
   {
     id: 1,
     type: 'Bill & Taxes',
@@ -33,7 +42,7 @@ const creditBalanceData = [
 
 const CreditBalance = () => {
   return (
-    <Paper sx={{ height: 385 }}>
+    <Paper sx={{ height: 396 }}>
       <Box
         p={2}
         height={100}
@@ -67,7 +76,7 @@ const CreditBalance = () => {
         </Stack>
       </Box>
 
-      <Typography mt={1.75} variant="body2" color="text.disabled" fontWeight={500}>
+      <Typography mt={2} variant="body2" color="text.disabled" fontWeight={500}>
         Recent
       </Typography>
 
@@ -94,7 +103,9 @@ const CreditBalance = () => {
             </Stack>
           </Stack>
 
-          <Typography variant="body1" fontWeight={700}>{item.amount}</Typography>
+          <Typography variant="body1" fontWeight={700}>
+            {item.amount}
+          </Typography>
         </Stack>
       ))}
     </Paper>
