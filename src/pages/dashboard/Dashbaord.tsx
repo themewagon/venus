@@ -2,13 +2,13 @@ import Grid from "@mui/material/Grid";
 import TopCards from "components/sections/dashboard/top-cards";
 import AvatarCard from "components/sections/dashboard/avatar-card";
 import TotalSpent from "components/sections/dashboard/total-spent";
-// import SpentThisMonth from "components/sections/dashboard/spent-this-month";
-// import Tasks from "components/sections/dashboard/tasks";
-// import Transactions from "components/sections/dashboard/transactions";
-// import Earnings from "components/sections/dashboard/earnings";
-// import Balance from "components/sections/dashboard/balance";
-// import CreditBalance from "components/sections/dashboard/credit-balance";
-// import TransactionHistory from "components/sections/dashboard/transaction-history";
+import Balance from "components/sections/dashboard/balance";
+import SpentThisMonth from "components/sections/dashboard/spent-this-month";
+import Transactions from "components/sections/dashboard/transactions";
+import Tasks from "components/sections/dashboard/tasks";
+import Earnings from "components/sections/dashboard/earnings";
+import CreditBalance from "components/sections/dashboard/credit-balance";
+import TransactionHistory from "components/sections/dashboard/transaction-history";
 
 const Dashbaord = () => {
   return (
@@ -25,33 +25,33 @@ const Dashbaord = () => {
         <AvatarCard/>
       </Grid>
 
-      {/* <Grid item xs={12} md={8}>
+      <Grid item xs={12} md={8}>
         <Balance/>
-      </Grid> */}
+      </Grid>
 
-      {/* <Grid item xs={12} md={4}>
+      <Grid item xs={12} md={4}>
         <SpentThisMonth/>
-      </Grid> */}
+      </Grid>
 
-      {/* <Grid item xs={12} md={4}>
+      <Grid item xs={12} md={4}>
         <Transactions/>
-      </Grid> */}
+      </Grid>
 
-      {/* <Grid item xs={12} md={4}>
+      <Grid item xs={12} md={4}>
         <Tasks/>
-      </Grid> */}
+      </Grid>
 
-      {/* <Grid item xs={12} md={4}>
+      <Grid item xs={12} md={4}>
         <Earnings/>
-      </Grid> */}
+      </Grid>
 
-      {/* <Grid item xs={12} md={4}>
+      <Grid item xs={12} md={4}>
         <CreditBalance/>
-      </Grid> */}
+      </Grid>
 
-      {/* <Grid item xs={12} md={8}>
+      <Grid item xs={12} md={8}>
         <TransactionHistory/>
-      </Grid> */}
+      </Grid>
     </Grid>
   );
 };
