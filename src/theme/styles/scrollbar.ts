@@ -12,11 +12,11 @@ const scrollbar = (theme: Theme) => ({
     visibility: 'hidden',
   },
   '*::-webkit-scrollbar-track': {
-    margin: 0,
+    marginTop: 120,
   },
   '*::-webkit-scrollbar-thumb': {
     borderRadius: 3,
-    backgroundColor: theme.palette.info.main,
+    backgroundColor: theme.palette.info.dark,
     visibility: 'hidden',
   },
 });
