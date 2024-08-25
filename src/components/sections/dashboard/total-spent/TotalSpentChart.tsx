@@ -101,8 +101,10 @@ const TotalSpentChart = ({ data, ...rest }: TotalSpentChartProps) => {
           data,
           itemStyle: {
             color: theme.palette.info.dark,
-            barBorderRadius: [10, 10, 10, 10],
-            emphasis: {
+            borderRadius: [10, 10, 10, 10],
+          },
+          emphasis: {
+            itemStyle: {
               color: theme.palette.primary.main,
             },
           },

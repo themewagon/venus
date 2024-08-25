@@ -8,7 +8,7 @@ import { CanvasRenderer } from 'echarts/renderers';
 
 echarts.use([BarChart, TooltipComponent, GridComponent, AxisPointerComponent, CanvasRenderer]);
 
-interface SpentThisMonthChartProps { 
+interface SpentThisMonthChartProps {
   data: number[];
   sx?: SxProps;
 }
@@ -75,8 +75,10 @@ const SpentThisMonthChart = ({ data, ...rest }: SpentThisMonthChartProps) => {
           data,
           itemStyle: {
             color: theme.palette.primary.main,
-            barBorderRadius: [10, 10, 10, 10],
-            emphasis: {
+            borderRadius: [10, 10, 10, 10],
+          },
+          emphasis: {
+            itemStyle: {
               color: theme.palette.primary.main,
             },
           },
