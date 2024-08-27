@@ -125,9 +125,9 @@ const Signin = () => {
 
         <Stack mt={-1.25} alignItems="center" justifyContent="space-between">
           <FormControlLabel
-            control={<Checkbox id="checkbox" name="checkbox" size="small" color="primary" />}
+            control={<Checkbox id="checkbox" name="checkbox" size="medium" color="primary" />}
             label="Remember me"
-            sx={{ ml: -1 }}
+            sx={{ ml: -0.75 }}
           />
           <Link href="#!" fontSize="body2.fontSize">
             Forgot password?
