@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MenuItem } from 'routes/sitemap';
+import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
@@ -16,7 +17,7 @@ const CollapseListItem = ({ subheader, active, items, icon }: MenuItem) => {
   };
 
   return (
-    <>
+    <Box sx={{ pb: 1.5 }}>
       <ListItemButton onClick={handleClick}>
         <ListItemIcon>
           {icon && (
@@ -54,7 +55,7 @@ const CollapseListItem = ({ subheader, active, items, icon }: MenuItem) => {
                 key={route.pathName}
                 component={Link}
                 href={route.path}
-                sx={{ ml: 1.5, bgcolor: route.active ? 'info.main' : null }}
+                sx={{ ml: 2.25, bgcolor: route.active ? 'info.main' : null }}
               >
                 <ListItemText
                   primary={route.name}
@@ -69,7 +70,7 @@ const CollapseListItem = ({ subheader, active, items, icon }: MenuItem) => {
           })}
         </List>
       </Collapse>
-    </>
+    </Box>
   );
 };
 

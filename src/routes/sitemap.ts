@@ -1,9 +1,10 @@
-// import paths from 'routes/paths';
+import paths from 'routes/paths';
 
 export interface SubMenuItem {
   name: string;
   pathName: string;
   path: string;
+  icon?: string;
   active?: boolean;
   items?: SubMenuItem[];
 }
@@ -39,10 +40,22 @@ const sitemap: MenuItem[] = [
     icon: 'material-symbols:local-library-outline',
   },
   {
-    id: 'security',
-    subheader: 'Security',
-    path: '#!',
+    id: 'authentication',
+    subheader: 'Authentication',
     icon: 'ic:round-security',
+    active: true,
+    items: [
+      {
+        name: 'Sign In',
+        pathName: 'signin',
+        path: paths.signin,
+      },
+      {
+        name: 'Sign Up',
+        pathName: 'signup',
+        path: paths.signup,
+      },
+    ],
   },
   {
     id: 'schedules',
