@@ -1,7 +1,13 @@
-import { Paper, Stack, Chip, Box, Typography, FormControl, Select, MenuItem } from '@mui/material';
-import IconifyIcon from 'components/base/IconifyIcon';
-import { SelectChangeEvent } from '@mui/material/Select';
 import { useState } from 'react';
+import IconifyIcon from 'components/base/IconifyIcon';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Chip from '@mui/material/Chip';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import FormControl from '@mui/material/FormControl';
+import MenuItem from '@mui/material/MenuItem';
 import customShadows from 'theme/shadows';
 import BalanceChart from './BalanceChart';
 
@@ -103,23 +109,6 @@ const Balance = () => {
             </Stack>
           </Box>
         ))}
-
-        {/* <Box
-          px={2.5}
-          py={2}
-          width={1}
-          maxWidth={320}
-          borderRadius={1.75}
-          boxShadow={customShadows[0]}
-        >
-          <Typography variant="body2" color="text.disabled" fontWeight={500}>
-            Saves
-          </Typography>
-          <Stack mt={0.75} alignItems="center" spacing={1.75}>
-            <Typography variant="h3">43.50%</Typography>
-            <Chip label="+2.45%" color="success" />
-          </Stack>
-        </Box> */}
       </Stack>
 
       <BalanceChart

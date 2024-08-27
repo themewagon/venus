@@ -1,4 +1,14 @@
-export const rows = [
+interface RowsProps {
+  id: number | string;
+  category: string;
+  date: string;
+  amount: string;
+  paymentMethod: string;
+  status: string;
+  balance: string;
+}
+
+export const rows: RowsProps[] = [
   {
     id: 1001,
     category: 'Groceries',

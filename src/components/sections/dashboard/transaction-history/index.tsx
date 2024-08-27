@@ -1,7 +1,7 @@
 import { useState, ChangeEvent } from 'react';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -17,7 +17,13 @@ const TransactionHistory = () => {
 
   return (
     <Paper sx={{ px: 0, height: { xs: 442, sm: 396 } }}>
-      <Stack px={3.5} spacing={{xs: 2, sm: 0}} direction={{xs: 'column', sm: 'row'}} alignItems="center" justifyContent="space-between">
+      <Stack
+        px={3.5}
+        spacing={{ xs: 2, sm: 0 }}
+        direction={{ xs: 'column', sm: 'row' }}
+        alignItems="center"
+        justifyContent="space-between"
+      >
         <Typography variant="h4" minWidth={200}>
           Transaction History
         </Typography>

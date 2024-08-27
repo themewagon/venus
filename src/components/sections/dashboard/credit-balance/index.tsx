@@ -1,4 +1,8 @@
-import { Paper, Stack, Box, Typography, IconButton } from '@mui/material';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
 import IconifyIcon from 'components/base/IconifyIcon';
 import BalanceBG from 'assets/images/balance-bg.png';
 import CreditBalanceChart from './CreditBalanceChart';

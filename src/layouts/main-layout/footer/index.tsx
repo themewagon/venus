@@ -6,7 +6,7 @@ const Footer = () => {
     <Typography
       mt={0.5}
       px={1}
-      py={2.5}
+      py={3}
       color="text.secondary"
       variant="body2"
       sx={{ textAlign: { xs: 'center', md: 'right' } }}

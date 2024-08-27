@@ -16,11 +16,15 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
     flex: 2,
     minWidth: 160,
     renderHeader: () => (
-      <Typography variant='body2' fontWeight={600} ml={1}>Transaction Id</Typography>
+      <Typography variant="body2" fontWeight={600} ml={1}>
+        Transaction Id
+      </Typography>
     ),
     renderCell: (params) => (
       <Stack ml={1} height={1} direction="column" alignSelf="center" justifyContent="center">
-        <Typography variant='body2' fontWeight={500}>{params.value}</Typography>
+        <Typography variant="body2" fontWeight={500}>
+          {params.value}
+        </Typography>
       </Stack>
     ),
   },

@@ -1,8 +1,8 @@
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 
 export const fontFamily = {
-  poppins: ["Poppins", 'sans-serif'].join(','),
-  DMSans: ["DM Sans", 'sans-serif'].join(','),
+  poppins: ['Poppins', 'sans-serif'].join(','),
+  DMSans: ['DM Sans', 'sans-serif'].join(','),
 };
 
 const typography: TypographyOptions = {
