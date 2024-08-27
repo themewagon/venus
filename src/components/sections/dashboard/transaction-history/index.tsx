@@ -37,7 +37,7 @@ const TransactionHistory = () => {
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
-                <IconifyIcon icon={'mynaui:search'} />
+                <IconifyIcon icon="eva:search-fill" />
               </InputAdornment>
             ),
           }}

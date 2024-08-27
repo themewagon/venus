@@ -18,7 +18,7 @@ const InputAdornment: Components<Omit<Theme, 'components'>>['MuiInputAdornment']
       paddingRight: theme.spacing(1),
     }),
     positionEnd: ({ theme }) => ({
-      paddingRight: theme.spacing(0.75),
+      paddingRight: theme.spacing(0.25),
     }),
   },
 };
