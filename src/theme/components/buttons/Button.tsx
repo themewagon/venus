@@ -7,7 +7,7 @@ const Button: Components<Omit<Theme, 'components'>>['MuiButton'] = {
   },
   styleOverrides: {
     root: ({ theme }) => ({
-      color: theme.palette.text.disabled,
+      color: theme.palette.info.light,
       borderRadius: theme.shape.borderRadius * 10,
       textTransform: 'initial',
     }),
@@ -16,14 +16,14 @@ const Button: Components<Omit<Theme, 'components'>>['MuiButton'] = {
       backgroundColor: 'transparent !important',
     }),
     containedPrimary: ({ theme }) => ({
-      color: theme.palette.info.lighter,
+      color: theme.palette.info.light,
       backgroundColor: theme.palette.primary.main,
       '&:hover': { backgroundColor: theme.palette.primary.main },
     }),
     containedSecondary: ({ theme }) => ({
       color: theme.palette.text.primary,
-      backgroundColor: theme.palette.info.lighter,
-      '&:hover': { backgroundColor: theme.palette.info.lighter },
+      backgroundColor: theme.palette.info.dark,
+      '&:hover': { backgroundColor: theme.palette.info.dark },
     }),
     sizeLarge: ({ theme }) => ({
       padding: theme.spacing(1.125, 3),
