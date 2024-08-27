@@ -26,7 +26,7 @@ const AuthLayout = ({ children }: PropsWithChildren) => {
         sx={{ position: 'absolute', top: 24, left: 24 }}
       >
         <Image src={Logo} alt="logo" height={36} width={36} sx={{ mr: 1.5 }} />
-        <Typography variant="h4" color="text.primary" letterSpacing={1}>
+        <Typography variant="h4" color="primary.main" letterSpacing={1}>
           VENUS
         </Typography>
       </ButtonBase>
