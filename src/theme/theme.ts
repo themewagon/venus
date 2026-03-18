@@ -1,3 +1,4 @@
+import type {} from '@mui/x-data-grid/themeAugmentation';
 import { createTheme } from '@mui/material/styles';
 import palette from './palette';
 import typography from './typography';
@@ -8,6 +9,8 @@ import Paper from './components/surface/Paper';
 
 import Link from './components/navigation/Link';
 import Drawer from './components/navigation/Drawer';
+import Chip from './components/data-display/Chip';
+import Badge from './components/data-display/Badge';
 
 import Button from './components/button/Button';
 import ButtonBase from './components/button/ButtonBase';
@@ -29,6 +32,9 @@ import ListItemButton from './components/list/ListItemButton';
 import Collapse from './components/list/Collapse';
 import MenuItem from './components/list/MenuItem';
 
+import DataGrid from './components/data-grid/DataGrid';
+import PaginationItem from './components/pagination/PaginationItem';
+
 import CssBaseline from './components/utils/CssBaseline';
 
 export const theme = createTheme({
@@ -43,6 +49,8 @@ export const theme = createTheme({
 
     MuiLink: Link,
     MuiDrawer: Drawer,
+    MuiChip: Chip,
+    MuiBadge: Badge,
 
     MuiInputBase: InputBase,
     MuiFilledInput: FilledInput,
@@ -61,6 +69,9 @@ export const theme = createTheme({
 
     MuiStack: Stack,
     MuiPaper: Paper,
+
+    MuiDataGrid: DataGrid,
+    MuiPaginationItem: PaginationItem,
 
     MuiCssBaseline: CssBaseline,
   },
