@@ -8,11 +8,11 @@ const Activity = () => {
   return (
     <Paper
       component={Stack}
-      alignItems="center"
-      justifyContent="space-between"
       sx={(theme) => ({
         px: 3,
         py: 2.5,
+        alignItems: 'center',
+        justifyContent: 'space-between',
         background: `linear-gradient(135deg, ${theme.palette.gradients.primary.state} 0%, ${theme.palette.gradients.primary.main} 100%)`,
       })}
     >

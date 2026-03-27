@@ -7,22 +7,17 @@ import ClientChart from './ClientChart';
 
 const Clients = () => {
   return (
-    <Paper
-      component={Stack}
-      alignItems="center"
-      justifyContent="space-between"
-      sx={{ px: 2, py: 2.5 }}
-    >
+    <Paper component={Stack} px={2} py={2.5} alignItems="center" justifyContent="space-between">
       <Stack alignItems="center" justifyContent="flex-start" spacing={2}>
         <Stack
-          alignItems="center"
-          justifyContent="center"
-          height={56}
-          width={56}
           sx={(theme) => ({
+            height: 56,
+            width: 56,
+            alignItems: 'center',
+            justifyContent: 'center',
             background: `linear-gradient(135deg, ${theme.palette.gradients.primary.state} 0%, ${theme.palette.gradients.primary.main} 100%)`,
+            borderRadius: '50%',
           })}
-          borderRadius="50%"
         >
           <IconifyIcon icon="ic:baseline-people-alt" color="info.light" fontSize="h3.fontSize" />
         </Stack>

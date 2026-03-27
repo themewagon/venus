@@ -6,7 +6,10 @@ import SpentChart from './SpentChart';
 
 const Spent = () => {
   return (
-    <Paper component={Stack} alignItems="center" justifyContent="space-between" sx={{ py: 2.5 }}>
+    <Paper
+      component={Stack}
+      sx={{ py: 2.5, alignItems: 'center', justifyContent: 'space-between' }}
+    >
       <Box>
         <Typography variant="body2" color="text.disabled" fontWeight={500}>
           Spent this month
