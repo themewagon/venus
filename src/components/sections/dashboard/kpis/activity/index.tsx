@@ -17,10 +17,10 @@ const Activity = () => {
       })}
     >
       <Box>
-        <Typography variant="body2" color="info.dark" fontWeight={500}>
+        <Typography variant="body2" color="info.dark" fontWeight={500} mb={1}>
           Activity
         </Typography>
-        <Typography mt={1} variant="h3" color="info.light">
+        <Typography variant="h3" color="info.light">
           $540.50
         </Typography>
       </Box>

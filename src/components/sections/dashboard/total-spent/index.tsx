@@ -10,10 +10,10 @@ const TotalSpent = () => {
     <Paper sx={{ height: 355 }}>
       <Stack alignItems="flex-start" justifyContent="space-between">
         <Box>
-          <Typography variant="caption" color="text.disabled" fontWeight={500}>
+          <Typography variant="caption" color="text.disabled" fontWeight={500} mb={0.25}>
             Total Spent
           </Typography>
-          <Typography variant="h2" color="text.primary" mt={0.25}>
+          <Typography variant="h2" color="text.primary">
             $682.5
           </Typography>
         </Box>

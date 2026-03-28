@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 import { SxProps, useTheme } from '@mui/material';
+import * as echarts from 'echarts/core';
 import ReactEchart from 'components/base/ReactEchart';
 import { TooltipComponent, GridComponent, AxisPointerComponent } from 'echarts/components';
 import { CanvasRenderer } from 'echarts/renderers';
 import { BarChart } from 'echarts/charts';
-import * as echarts from 'echarts/core';
 
 echarts.use([BarChart, TooltipComponent, GridComponent, AxisPointerComponent, CanvasRenderer]);
 

@@ -6,30 +6,23 @@ import IconifyIcon from 'components/base/IconifyIcon';
 
 const Earnings = () => {
   return (
-    <Paper
-      component={Stack}
-      alignItems="center"
-      justifyContent="space-between"
-      sx={{ px: 2, py: 3 }}
-    >
+    <Paper component={Stack} px={2} py={3} alignItems="center" justifyContent="space-between">
       <Stack alignItems="center" justifyContent="flex-start" spacing={2}>
         <Stack
+          width={56}
+          height={56}
           alignItems="center"
           justifyContent="center"
-          height={56}
-          width={56}
           bgcolor="info.main"
           borderRadius="50%"
         >
           <IconifyIcon icon="ic:round-bar-chart" color="primary.main" fontSize="h3.fontSize" />
         </Stack>
         <Box>
-          <Typography variant="body2" color="text.disabled" fontWeight={500}>
+          <Typography variant="body2" color="text.disabled" fontWeight={500} mb={1}>
             Earnings
           </Typography>
-          <Typography mt={1} variant="h3">
-            $350.40
-          </Typography>
+          <Typography variant="h3">$350.40</Typography>
         </Box>
       </Stack>
     </Paper>

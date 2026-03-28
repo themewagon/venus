@@ -35,23 +35,24 @@ const ProfileCard = () => {
         <Avatar
           src={AvatarImg}
           sx={{
-            height: 130,
+            mb: 2,
             width: 130,
+            height: 130,
             bgcolor: 'info.main',
           }}
         />
 
-        <Typography variant="h4" color="text.primary" mt={2}>
+        <Typography variant="h4" color="text.primary" mb={0.25}>
           {profile.name}
         </Typography>
-        <Stack mt={0.25} alignItems="center" spacing={0.5}>
+        <Stack alignItems="center" spacing={0.5} mb={3}>
           <IconifyIcon icon="ic:outline-location-on" color="text.disabled" fontSize="h6.fontSize" />
           <Typography variant="body1" color="text.disabled">
             {profile.location}
           </Typography>
         </Stack>
 
-        <Stack mt={3} spacing={4}>
+        <Stack spacing={4}>
           {profile.details.map((item) => (
             <Stack key={item.id} direction="column" alignItems="center">
               <Typography color="text.disabled" fontSize="body2.fontSize">
