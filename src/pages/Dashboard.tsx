@@ -1,5 +1,6 @@
 import Grid from '@mui/material/Grid';
 import KPIs from 'components/sections/dashboard/kpis/KPIs';
+import ProfileCard from 'components/sections/dashboard/ProfileCard';
 import TotalSpent from 'components/sections/dashboard/total-spent';
 
 const Dashboard = () => {
@@ -10,6 +11,9 @@ const Dashboard = () => {
       </Grid>
       <Grid size={{ xs: 12, md: 8 }}>
         <TotalSpent />
+      </Grid>
+      <Grid size={{ xs: 12, md: 4 }}>
+        <ProfileCard />
       </Grid>
     </Grid>
   );
