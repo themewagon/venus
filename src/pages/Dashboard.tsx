@@ -4,6 +4,8 @@ import Balance from 'components/sections/dashboard/balance';
 import ProfileCard from 'components/sections/dashboard/ProfileCard';
 import TotalSpent from 'components/sections/dashboard/total-spent';
 import SpentThisMonth from 'components/sections/dashboard/spent-this-month';
+import Transactions from 'components/sections/dashboard/Transactions';
+import Tasks from 'components/sections/dashboard/Tasks';
 
 const Dashboard = () => {
   return (
@@ -22,6 +24,12 @@ const Dashboard = () => {
       </Grid>
       <Grid size={{ xs: 12, md: 4 }}>
         <SpentThisMonth />
+      </Grid>
+      <Grid size={{ xs: 12, md: 4 }}>
+        <Transactions />
+      </Grid>
+      <Grid size={{ xs: 12, md: 4 }}>
+        <Tasks />
       </Grid>
     </Grid>
   );
