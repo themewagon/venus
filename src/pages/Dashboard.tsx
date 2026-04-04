@@ -7,6 +7,7 @@ import SpentThisMonth from 'components/sections/dashboard/spent-this-month';
 import Transactions from 'components/sections/dashboard/Transactions';
 import Tasks from 'components/sections/dashboard/Tasks';
 import Earnings from 'components/sections/dashboard/earnings';
+import CreditBalance from 'components/sections/dashboard/credit-balance';
 
 const Dashboard = () => {
   return (
@@ -34,6 +35,9 @@ const Dashboard = () => {
       </Grid>
       <Grid size={{ xs: 12, md: 4 }}>
         <Earnings />
+      </Grid>
+      <Grid size={{ xs: 12, md: 4 }}>
+        <CreditBalance />
       </Grid>
     </Grid>
   );
