@@ -8,6 +8,7 @@ import Transactions from 'components/sections/dashboard/Transactions';
 import Tasks from 'components/sections/dashboard/Tasks';
 import Earnings from 'components/sections/dashboard/earnings';
 import CreditBalance from 'components/sections/dashboard/credit-balance';
+import TransactionHistory from 'components/sections/dashboard/transaction-history';
 
 const Dashboard = () => {
   return (
@@ -38,6 +39,9 @@ const Dashboard = () => {
       </Grid>
       <Grid size={{ xs: 12, md: 4 }}>
         <CreditBalance />
+      </Grid>
+      <Grid size={{ xs: 12, md: 8 }}>
+        <TransactionHistory />
       </Grid>
     </Grid>
   );
