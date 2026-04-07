@@ -1,7 +1,13 @@
-import { lazy, Suspense } from 'react';
+import paths, { rootPaths } from './paths';
+import { Suspense, lazy } from 'react';
 import { Outlet, createBrowserRouter } from 'react-router';
 import MainLayout from 'layouts/main-layout';
-import { rootPaths } from './paths';
+import Splash from 'components/loader/Splash';
+import PageLoader from 'components/loader/PageLoader';
+import AuthLayout from 'layouts/auth-layout';
+import Signin from 'pages/authentication/Signin';
+import Signup from 'pages/authentication/Signup';
+import Error404 from 'pages/Error404';
 
 const App = lazy(() => import('App'));
 const Dashboard = lazy(() => import('pages/Dashboard'));
@@ -10,7 +16,7 @@ const router = createBrowserRouter(
   [
     {
       element: (
-        <Suspense fallback={<h1>Loading...</h1>}>
+        <Suspense fallback={<Splash />}>
           <App />
         </Suspense>
       ),
@@ -19,7 +25,7 @@ const router = createBrowserRouter(
           path: '/',
           element: (
             <MainLayout>
-              <Suspense>
+              <Suspense fallback={<PageLoader />}>
                 <Outlet />
               </Suspense>
             </MainLayout>
@@ -33,7 +39,25 @@ const router = createBrowserRouter(
         },
         {
           path: rootPaths.authRoot,
-          element: <Outlet />,
+          element: (
+            <AuthLayout>
+              <Outlet />
+            </AuthLayout>
+          ),
+          children: [
+            {
+              path: paths.signin,
+              element: <Signin />,
+            },
+            {
+              path: paths.signup,
+              element: <Signup />,
+            },
+          ],
+        },
+        {
+          path: '*',
+          element: <Error404 />,
         },
       ],
     },
