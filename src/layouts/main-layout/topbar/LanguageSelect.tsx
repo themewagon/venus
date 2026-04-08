@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import IconifyIcon from 'components/base/IconifyIcon';
+import { listClasses } from '@mui/material/List';
 
 interface Language {
   id: number;
@@ -79,7 +80,7 @@ const LanguageSelect = () => {
         onClick={handleFlagMenuClose}
         sx={{
           mt: 1.5,
-          '& .MuiList-root': {
+          [`& .${listClasses.root}`]: {
             width: 230,
           },
         }}

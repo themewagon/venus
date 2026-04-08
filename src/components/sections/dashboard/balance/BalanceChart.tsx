@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { SxProps, useTheme } from '@mui/material';
+import { SxProps } from '@mui/material';
 import * as echarts from 'echarts/core';
 import ReactEchart from 'components/base/ReactEchart';
 import { CanvasRenderer } from 'echarts/renderers';
@@ -27,8 +27,6 @@ interface ClientChartProps {
 }
 
 const BalanceChart = ({ data, ...rest }: ClientChartProps) => {
-  const theme = useTheme();
-
   const option = useMemo(
     () => ({
       tooltip: {
@@ -108,7 +106,7 @@ const BalanceChart = ({ data, ...rest }: ClientChartProps) => {
         },
       ],
     }),
-    [theme, data],
+    [data],
   );
 
   return <ReactEchart echarts={echarts} option={option} {...rest} />;

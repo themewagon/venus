@@ -55,7 +55,7 @@ const ActionMenu = () => {
         sx={{ p: 0.75, border: 'none', bgcolor: 'transparent !important' }}
         size="medium"
       >
-        <IconifyIcon icon="solar:menu-dots-bold" color="text.primary" />
+        <IconifyIcon icon="solar:menu-dots-bold" color="text.primary" fontSize="h6.fontSize" />
       </IconButton>
       <Menu
         anchorEl={anchorEl}

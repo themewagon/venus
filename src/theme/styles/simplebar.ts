@@ -1,14 +1,14 @@
-import { Theme } from "@mui/material";
+import { Theme } from '@mui/material';
 
 const simplebar = (theme: Theme) => ({
-  "& .simplebar-track": {
-    "&.simplebar-vertical": {
-      "& .simplebar-scrollbar": {
-        "&:before": {
+  '& .simplebar-track': {
+    '&.simplebar-vertical': {
+      '& .simplebar-scrollbar': {
+        '&:before': {
           backgroundColor: theme.palette.grey[300],
         },
-        "&.simplebar-visible": {
-          "&:before": {
+        '&.simplebar-visible': {
+          '&:before': {
             opacity: 1,
           },
         },

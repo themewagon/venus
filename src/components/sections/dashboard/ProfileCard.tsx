@@ -1,5 +1,5 @@
-import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import Paper from '@mui/material/Paper';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import AvatarImg from 'assets/images/avatar.png';

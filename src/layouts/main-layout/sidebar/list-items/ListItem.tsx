@@ -2,7 +2,7 @@ import { MenuItem } from 'routes/sitemap';
 import Link from '@mui/material/Link';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import ListItemText, { listItemTextClasses } from '@mui/material/ListItemText';
 import IconifyIcon from 'components/base/IconifyIcon';
 
 const ListItem = ({ subheader, icon, path, active }: MenuItem) => {
@@ -32,7 +32,7 @@ const ListItem = ({ subheader, icon, path, active }: MenuItem) => {
       <ListItemText
         primary={subheader}
         sx={{
-          '& .MuiListItemText-primary': {
+          [`& .${listItemTextClasses.primary}`]: {
             color: active ? 'info.light' : null,
           },
         }}

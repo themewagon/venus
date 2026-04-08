@@ -1,4 +1,4 @@
-import { PaletteColorOptions, PaletteOptions } from "@mui/material/styles";
+import { PaletteColorOptions, PaletteOptions } from '@mui/material/styles';
 import {
   gray,
   red,
@@ -11,9 +11,9 @@ import {
   transparentRed,
   transparentGreen,
   transparentYellow,
-} from "./colors";
+} from './colors';
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface PaletteOptions {
     neutral?: PaletteColorOptions;
     transparent?: {

@@ -1,58 +1,58 @@
-import type { TypographyVariantsOptions } from "@mui/material/styles";
+import type { TypographyVariantsOptions } from '@mui/material/styles';
 
 export const fontFamily = {
-  poppins: ["Poppins", "sans-serif"].join(","),
-  DMSans: ["DM Sans", "sans-serif"].join(","),
+  poppins: ['Poppins', 'sans-serif'].join(','),
+  DMSans: ['DM Sans', 'sans-serif'].join(','),
 };
 
 const typography: TypographyVariantsOptions = {
   fontFamily: fontFamily.DMSans,
   h1: {
-    fontSize: "3rem",
+    fontSize: '3rem',
     fontWeight: 700,
   },
   h2: {
-    fontSize: "2.125rem",
+    fontSize: '2.125rem',
     fontWeight: 700,
   },
   h3: {
-    fontSize: "1.75rem",
+    fontSize: '1.75rem',
     fontWeight: 700,
   },
   h4: {
-    fontSize: "1.5rem",
+    fontSize: '1.5rem',
     fontWeight: 700,
   },
   h5: {
-    fontSize: "1.25rem",
+    fontSize: '1.25rem',
     fontWeight: 700,
   },
   h6: {
-    fontSize: "1.125rem",
+    fontSize: '1.125rem',
     fontWeight: 700,
   },
   subtitle1: {
-    fontSize: "1rem",
+    fontSize: '1rem',
     fontWeight: 400,
   },
   subtitle2: {
-    fontSize: "0.875rem",
+    fontSize: '0.875rem',
     fontWeight: 500,
   },
   body1: {
-    fontSize: "1rem",
+    fontSize: '1rem',
     fontWeight: 400,
   },
   body2: {
-    fontSize: "0.875rem",
+    fontSize: '0.875rem',
     fontWeight: 400,
   },
   caption: {
-    fontSize: "0.75rem",
+    fontSize: '0.75rem',
     fontWeight: 600,
   },
   button: {
-    fontSize: "1rem",
+    fontSize: '1rem',
     fontWeight: 500,
   },
 };

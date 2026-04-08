@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, SubmitEvent } from 'react';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -24,7 +24,7 @@ const Signin = () => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(user);
   };
@@ -35,7 +35,7 @@ const Signin = () => {
         Sign In
       </Typography>
       <Typography mt={1.5} align="center" variant="body2">
-        Welcome back! Let's continue with,
+        Welcome back! Let's continue with
       </Typography>
 
       <Stack mt={3} spacing={1.75} width={1}>
@@ -74,12 +74,14 @@ const Signin = () => {
           fullWidth
           autoFocus
           required
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <IconifyIcon icon="ic:baseline-alternate-email" />
-              </InputAdornment>
-            ),
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  <IconifyIcon icon="ic:baseline-alternate-email" />
+                </InputAdornment>
+              ),
+            },
           }}
         />
         <TextField
@@ -93,33 +95,36 @@ const Signin = () => {
           autoComplete="current-password"
           fullWidth
           required
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <IconifyIcon icon="ic:outline-lock" />
-              </InputAdornment>
-            ),
-            endAdornment: (
-              <InputAdornment
-                position="end"
-                sx={{
-                  opacity: user.password ? 1 : 0,
-                  pointerEvents: user.password ? 'auto' : 'none',
-                }}
-              >
-                <IconButton
-                  aria-label="toggle password visibility"
-                  onClick={() => setShowPassword(!showPassword)}
-                  sx={{ border: 'none', bgcolor: 'transparent !important' }}
-                  edge="end"
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  <IconifyIcon icon="ic:outline-lock" />
+                </InputAdornment>
+              ),
+              endAdornment: (
+                <InputAdornment
+                  position="end"
+                  sx={{
+                    opacity: user.password ? 1 : 0,
+                    pointerEvents: user.password ? 'auto' : 'none',
+                  }}
                 >
-                  <IconifyIcon
-                    icon={showPassword ? 'ic:outline-visibility' : 'ic:outline-visibility-off'}
-                    color="neutral.light"
-                  />
-                </IconButton>
-              </InputAdornment>
-            ),
+                  <IconButton
+                    size="small"
+                    aria-label="toggle password visibility"
+                    onClick={() => setShowPassword(!showPassword)}
+                    sx={{ border: 'none', bgcolor: 'transparent !important' }}
+                    edge="end"
+                  >
+                    <IconifyIcon
+                      icon={showPassword ? 'ic:outline-visibility' : 'ic:outline-visibility-off'}
+                      color="neutral.light"
+                    />
+                  </IconButton>
+                </InputAdornment>
+              ),
+            },
           }}
         />
 

@@ -65,12 +65,14 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
           variant="filled"
           placeholder="Search"
           sx={{ width: 340, display: { xs: 'none', md: 'flex' } }}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <IconifyIcon icon="eva:search-fill" />
-              </InputAdornment>
-            ),
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  <IconifyIcon icon="eva:search-fill" />
+                </InputAdornment>
+              ),
+            },
           }}
         />
       </Stack>

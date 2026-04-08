@@ -1,3 +1,4 @@
+import { menuClasses } from '@mui/material';
 import type { Theme, Components } from '@mui/material/styles';
 import customShadows from 'theme/shadows';
 
@@ -9,7 +10,7 @@ const Paper: Components<Omit<Theme, 'components'>>['MuiPaper'] = {
       borderRadius: Number(theme.shape.borderRadius) * 3,
       boxShadow: 'none',
 
-      '&.MuiMenu-paper': {
+      [`&.${menuClasses.paper}`]: {
         padding: 0,
         boxShadow: customShadows[1],
       },

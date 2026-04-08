@@ -5,7 +5,7 @@ import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+import ListItemText, { listItemTextClasses } from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
 import IconifyIcon from 'components/base/IconifyIcon';
 
@@ -32,7 +32,7 @@ const CollapseListItem = ({ subheader, active, items, icon }: MenuItem) => {
         <ListItemText
           primary={subheader}
           sx={{
-            '& .MuiListItemText-primary': {
+            [`& .${listItemTextClasses.primary}`]: {
               color: active ? 'text.primary' : null,
             },
           }}
@@ -60,7 +60,7 @@ const CollapseListItem = ({ subheader, active, items, icon }: MenuItem) => {
                 <ListItemText
                   primary={route.name}
                   sx={{
-                    '& .MuiListItemText-primary': {
+                    [`& .${listItemTextClasses.primary}`]: {
                       color: 'text.primary',
                     },
                   }}

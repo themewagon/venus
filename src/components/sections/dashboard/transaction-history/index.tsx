@@ -1,7 +1,7 @@
 import { useState, ChangeEvent } from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -34,12 +34,14 @@ const TransactionHistory = () => {
           value={searchText}
           onChange={handleInputChange}
           sx={{ width: 1, maxWidth: 250 }}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconifyIcon icon="eva:search-fill" />
-              </InputAdornment>
-            ),
+          slotProps={{
+            input: {
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconifyIcon icon="eva:search-fill" />
+                </InputAdornment>
+              ),
+            },
           }}
         />
       </Stack>

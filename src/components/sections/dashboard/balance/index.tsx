@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import IconifyIcon from 'components/base/IconifyIcon';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
-import Chip from '@mui/material/Chip';
+import { inputBaseClasses } from '@mui/material';
 import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Paper from '@mui/material/Paper';
+import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 import FormControl from '@mui/material/FormControl';
 import MenuItem from '@mui/material/MenuItem';
-import customShadows from 'theme/shadows';
 import BalanceChart from './BalanceChart';
+import customShadows from 'theme/shadows';
 
 const balance = [
   {
@@ -42,8 +43,8 @@ const Balance = () => {
       <Stack alignItems={{ xs: 'flex-start', sm: 'center' }} justifyContent="space-between">
         <Stack
           alignItems="center"
-          spacing={{ xs: 0.75, sm: 1.5 }}
           direction={{ xs: 'column', sm: 'row' }}
+          spacing={{ xs: 0.75, sm: 1.5 }}
         >
           <Typography variant="h4" color="text.primary">
             Balance
@@ -60,7 +61,7 @@ const Balance = () => {
           variant="filled"
           sx={{
             width: 105,
-            '& .MuiInputBase-root': {
+            [`& .${inputBaseClasses.root}`]: {
               '&:focus-within': {
                 borderColor: 'transparent !important',
                 boxShadow: 'none',
