@@ -7,7 +7,7 @@ const Spent = () => {
   return (
     <Paper
       component={Stack}
-      sx={{ py: 2.5, alignItems: 'center', justifyContent: 'space-between' }}
+      sx={{ px: 3, py: 2.5, alignItems: 'center', justifyContent: 'space-between' }}
     >
       <div>
         <Typography variant="body2" color="text.disabled" fontWeight={500} mb={1}>

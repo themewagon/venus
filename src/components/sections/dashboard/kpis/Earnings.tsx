@@ -6,7 +6,7 @@ import IconifyIcon from 'components/base/IconifyIcon';
 
 const Earnings = () => {
   return (
-    <Paper component={Stack} px={2} py={3} alignItems="center" justifyContent="space-between">
+    <Paper component={Stack} sx={{ p: 3, alignItems: 'center', justifyContent: 'space-between' }}>
       <Stack alignItems="center" justifyContent="flex-start" spacing={2}>
         <Stack
           width={56}

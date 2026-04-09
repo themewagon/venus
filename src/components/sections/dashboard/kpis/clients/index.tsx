@@ -7,7 +7,10 @@ import ClientChart from './ClientChart';
 
 const Clients = () => {
   return (
-    <Paper component={Stack} px={2} py={2.5} alignItems="center" justifyContent="space-between">
+    <Paper
+      component={Stack}
+      sx={{ px: 3, py: 2.5, alignItems: 'center', justifyContent: 'space-between' }}
+    >
       <Stack alignItems="center" justifyContent="flex-start" spacing={2}>
         <Stack
           sx={(theme) => ({
